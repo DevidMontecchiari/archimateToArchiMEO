@@ -1,0 +1,169 @@
+# baseURI: http://ikm-group.ch/archiMEO/archimate
+# imports: http://ikm-group.ch/archiMEO/emo
+# imports: http://ikm-group.ch/archiMEO/eo
+# imports: http://ikm-group.ch/archiMEO/top
+# imports: http://ikm-group.ch/archimeo/iso42010
+
+@prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
+@prefix mod: <http://ikm-group.ch/archiMEO/mod#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix emo: <http://ikm-group.ch/archiMEO/emo#> .
+@prefix eo: <http://ikm-group.ch/archiMEO/eo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfsplus: <http://topbraid.org/spin/rdfsplus#> .
+@prefix top: <http://ikm-group.ch/archiMEO/top#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+mod:Fleet_Information_RS
+  rdf:type archi:DataObject ;
+  rdfs:label "Fleet Information RS" ;
+  rdfs:comment "Id-OQsuNK6GAqACZxO7" ;
+.
+
+mod:CRM
+  rdf:type archi:ApplicationComponent ;
+  rdfs:label "CRM" ;
+  rdfs:comment "Id-PbVWNK6GAqACZxJn" ;
+.
+
+mod:Customer_Data_RS
+  rdf:type archi:DataObject ;
+  rdfs:label "Customer Data RS" ;
+  rdfs:comment "Id-ZljONK6GAqACZxNK" ;
+.
+
+mod:Customer_Data_ERP
+  rdf:type archi:DataObject ;
+  rdfs:label "Customer Data ERP" ;
+  rdfs:comment "Id-JymuNK6GAqACZxQH" ;
+.
+
+mod:Customer_Data_CRM
+  rdf:type archi:DataObject ;
+  rdfs:label "Customer Data CRM" ;
+  rdfs:comment "Id-xX.2NK6GAqACZxKc" ;
+.
+
+mod:Booking_Data
+  rdf:type archi:DataObject ;
+  rdfs:label "Booking Data" ;
+  rdfs:comment "Id-wop2NK6GAqACZxK3" ;
+.
+
+mod:Fleet_Information_ERP
+  rdf:type archi:DataObject ;
+  rdfs:label "Fleet Information ERP" ;
+  rdfs:comment "Id-6rFuNK6GAqACZxQx" ;
+.
+
+mod:Current_Bookings_RS
+  rdf:type archi:DataObject ;
+  rdfs:label "Current Bookings RS" ;
+  rdfs:comment "Id-e1d2NK6GAqACZxLf" ;
+.
+
+mod:Data
+  rdf:type archi:DataObject ;
+  rdfs:label "Data" ;
+  rdfs:comment "Id-OMWONK6GAqACZxMH" ;
+.
+
+mod:Financial_Data_ERP
+  rdf:type archi:DataObject ;
+  rdfs:label "Financial Data ERP" ;
+  rdfs:comment "Id-Jl1uNK6GAqACZxRB" ;
+.
+
+mod:Reservation_System
+  rdf:type archi:ApplicationComponent ;
+  rdfs:label "Reservation System" ;
+  rdfs:comment "Id-YaNWNK6GAqACZxJy" ;
+.
+
+mod:ERP
+  rdf:type archi:ApplicationComponent ;
+  rdfs:label "ERP" ;
+  rdfs:comment "Id-DI9WNK6GAqACZxKD" ;
+.
+
+mod:Id_DI9WNK6GAqACZxKD_To_Id_JymuNK6GAqACZxQH
+  rdf:type archi:Access ;
+  rdfs:domain mod:ERP ;
+  rdfs:range mod:Customer_Data_ERP ;
+  rdfs:comment "Id-XymuNK6GAqACZxQL" ;
+.
+
+mod:Id_PbVWNK6GAqACZxJn_To_Id_wop2NK6GAqACZxK3
+  rdf:type archi:Access ;
+  rdfs:domain mod:CRM ;
+  rdfs:range mod:Booking_Data ;
+  rdfs:comment "Id-2op2NK6GAqACZxK7" ;
+.
+
+mod:Id_DI9WNK6GAqACZxKD_To_Id_Jl1uNK6GAqACZxRB
+  rdf:type archi:Access ;
+  rdfs:domain mod:ERP ;
+  rdfs:range mod:Financial_Data_ERP ;
+  rdfs:comment "Id-AV1uNK6GAqACZxRF" ;
+.
+
+mod:Id_YaNWNK6GAqACZxJy_To_Id_e1d2NK6GAqACZxLf
+  rdf:type archi:Access ;
+  rdfs:domain mod:Reservation_System ;
+  rdfs:range mod:Current_Bookings_RS ;
+  rdfs:comment "Id-z1d2NK6GAqACZxLj" ;
+.
+
+mod:Id_PbVWNK6GAqACZxJn_To_Id_xX_2NK6GAqACZxKc
+  rdf:type archi:Access ;
+  rdfs:domain mod:CRM ;
+  rdfs:range mod:Customer_Data_CRM ;
+  rdfs:comment "Id-fX.2NK6GAqACZxKh" ;
+.
+
+mod:Id_DI9WNK6GAqACZxKD_To_Id_6rFuNK6GAqACZxQx
+  rdf:type archi:Access ;
+  rdfs:domain mod:ERP ;
+  rdfs:range mod:Fleet_Information_ERP ;
+  rdfs:comment "Id-DrFuNK6GAqACZxQ1" ;
+.
+
+mod:Id_YaNWNK6GAqACZxJy_To_Id_ZljONK6GAqACZxNK
+  rdf:type archi:Access ;
+  rdfs:domain mod:Reservation_System ;
+  rdfs:range mod:Customer_Data_RS ;
+  rdfs:comment "Id-_wfONK6GAqACZxOG" ;
+.
+
+mod:Id_YaNWNK6GAqACZxJy_To_Id_OQsuNK6GAqACZxO7
+  rdf:type archi:Access ;
+  rdfs:domain mod:Reservation_System ;
+  rdfs:range mod:Fleet_Information_RS ;
+  rdfs:comment "Id-_QsuNK6GAqACZxO_" ;
+.
+
+mod:Phd_MDM
+  rdf:type archi:model ;
+  archi:hasModellingElement mod:Fleet_Information_RS ;
+  archi:hasModellingElement mod:CRM ;
+  archi:hasModellingElement mod:Customer_Data_RS ;
+  archi:hasModellingElement mod:Customer_Data_ERP ;
+  archi:hasModellingElement mod:Customer_Data_CRM ;
+  archi:hasModellingElement mod:Booking_Data ;
+  archi:hasModellingElement mod:Fleet_Information_ERP ;
+  archi:hasModellingElement mod:Current_Bookings_RS ;
+  archi:hasModellingElement mod:Data ;
+  archi:hasModellingElement mod:Financial_Data_ERP ;
+  archi:hasModellingElement mod:Reservation_System ;
+  archi:hasModellingElement mod:ERP ;
+  archi:hasModellingElement mod:Id_DI9WNK6GAqACZxKD_To_Id_JymuNK6GAqACZxQH ;
+  archi:hasModellingElement mod:Id_PbVWNK6GAqACZxJn_To_Id_wop2NK6GAqACZxK3 ;
+  archi:hasModellingElement mod:Id_DI9WNK6GAqACZxKD_To_Id_Jl1uNK6GAqACZxRB ;
+  archi:hasModellingElement mod:Id_YaNWNK6GAqACZxJy_To_Id_e1d2NK6GAqACZxLf ;
+  archi:hasModellingElement mod:Id_PbVWNK6GAqACZxJn_To_Id_xX_2NK6GAqACZxKc ;
+  archi:hasModellingElement mod:Id_DI9WNK6GAqACZxKD_To_Id_6rFuNK6GAqACZxQx ;
+  archi:hasModellingElement mod:Id_YaNWNK6GAqACZxJy_To_Id_ZljONK6GAqACZxNK ;
+  archi:hasModellingElement mod:Id_YaNWNK6GAqACZxJy_To_Id_OQsuNK6GAqACZxO7 ;
+.

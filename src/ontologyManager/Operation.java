@@ -1,4 +1,4 @@
-package archimateToArchiMEO;
+package ontologyManager;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

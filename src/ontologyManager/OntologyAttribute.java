@@ -1,4 +1,4 @@
-package archimateToArchiMEO;
+package ontologyManager;
 
 
 public class OntologyAttribute {

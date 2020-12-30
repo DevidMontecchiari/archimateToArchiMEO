@@ -5,6 +5,10 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
+import ontologyManager.OntologyAttribute;
+import ontologyManager.OntologyInstance;
+import ontologyManager.Operation;
+
 public class Mapper {
 
 	Operation ontology;
@@ -72,7 +76,7 @@ public class Mapper {
 			
 			if(this.ontology.archimate.containsKey("archi:"+rel.getXsiType())){
 
-				String instanceName="mod:"+validateRDFid(rel.name.trim());
+				
 
 				ArrayList<String> types=new ArrayList<String>();
 				types.add("archi:"+rel.getXsiType());
@@ -92,11 +96,13 @@ public class Mapper {
 				OntologyAttribute id= new OntologyAttribute( "  rdfs:comment","","\""+rel.identifier.trim()+"\"");
 				attributes.add(id);
 
+				String instanceName="mod:"+validateRDFid(validateRDFid(domainName)+rel.getXsiType()+validateRDFid(rangeName));
 				OntologyInstance c= new OntologyInstance(instanceName, types, attributes);
 
 				this.ontology.diagram.put(c.getName(), c);
 
 				rdf+=c.toRDF()+"\n";
+				diagramRDF+="  archi:hasModellingElement " +c.getName()+" ;\r";
 			}else{
 				System.out.print("\nMissing!! "+ rel.getXsiType());
 			};			
