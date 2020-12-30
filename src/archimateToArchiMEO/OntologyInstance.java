@@ -12,7 +12,7 @@ public class OntologyInstance {
 	private String name;
 	private ArrayList<String> types;
 	private ArrayList<OntologyAttribute> attributes;
-	
+
 	public OntologyInstance(String name,  ArrayList<String> types, ArrayList<OntologyAttribute> attributes) {
 		super();
 		this.name = name;
@@ -38,7 +38,7 @@ public class OntologyInstance {
 	public void setAttributes(ArrayList<OntologyAttribute> attributes) {
 		this.attributes = attributes;
 	}
-	
+
 	public String getNameWithoutPrefix() {
 		String[] arraySplittate = this.name.split(":");
 		return arraySplittate[1];
@@ -52,4 +52,17 @@ public class OntologyInstance {
 		}
 		return result.replaceAll("\"","");
 	}
+
+	public String toRDF() {
+		String rdf="";
+		String prefix="mod:";
+		rdf+=name + "\r";
+		for (int i = 0; i < this.types.size(); i++) {
+			rdf+="  rdf:type" +" "+ this.types.get(i) +" ;\r";
+		}
+		for (int i = 0; i < this.attributes.size(); i++) {
+			OntologyAttribute attribute = this.attributes.get(i);
+			rdf+=attribute.getName()+" " + attribute.getValue()+" ;\r";
+		}
+		return rdf+".\n";	}	
 }

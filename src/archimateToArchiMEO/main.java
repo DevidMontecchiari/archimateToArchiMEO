@@ -25,7 +25,7 @@ public class main {
 		ontology.parseOntology(pathArchiMEO + "ARCHIMATE//archimate.ttl");
 		ontology.parseOntology(pathArchiMEO + "EO//EO.ttl");
 		
-		System.out.println(ontology.archimate.toString());
+//		System.out.println(ontology.archimate.toString());
 //		System.out.println(ontology.enterpriseOntology.toString());
 		
 		Mapper mapper=new Mapper(ontology, model);

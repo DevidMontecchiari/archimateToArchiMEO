@@ -4,12 +4,69 @@ public class Relationships {
 	
 	
 	String raw="";
+	String name="";
 	String identifier="";
 	String xsiType="";
 	String source="";
 	String target="";
 	String accessType="";
 	
+	public String getRaw() {
+		return raw;
+	}
+
+	public void setRaw(String raw) {
+		this.raw = raw;
+	}
+
+	public String getIdentifier() {
+		return identifier;
+	}
+
+	public void setIdentifier(String identifier) {
+		this.identifier = identifier;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getXsiType() {
+		return xsiType;
+	}
+
+	public void setXsiType(String xsiType) {
+		this.xsiType = xsiType;
+	}
+
+	public String getSource() {
+		return source;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
+	}
+
+	public String getTarget() {
+		return target;
+	}
+
+	public void setTarget(String target) {
+		this.target = target;
+	}
+
+	public String getAccessType() {
+		return accessType;
+	}
+
+	public void setAccessType(String accessType) {
+		this.accessType = accessType;
+	}
+
 	public Relationships(String raw) {
 		this.raw=raw;
 		updateElementData(raw);
@@ -33,24 +90,24 @@ public class Relationships {
 			switch ((String) splitted[i].subSequence(0,5)) {
 			
 			case "acces":
-				this.accessType=splitted[i].replace("accessType=","").replace("/>","");
+				this.accessType=splitted[i].replace("accessType=","").replace("/>","").trim();
 				break;
 				
 			case "ident":
-				this.identifier=splitted[i].replace("identifier=","");
+				this.identifier=splitted[i].replace("identifier=","").trim();
 				break;
 
 			case "sourc":
-				this.source=splitted[i].replace("source=","");
+				this.source=splitted[i].replace("source=","").trim();
 				break;
 
 			case "targe":
-				this.target=splitted[i].replace("target=","");
+				this.target=splitted[i].replace("target=","").trim();
 				break;
 				
 			case "xsi:t":
 			
-				this.xsiType=splitted[i].replace("xsi:type=","");
+				this.xsiType=splitted[i].replace("xsi:type=","").trim();
 				break;
 
 			default:
@@ -59,6 +116,9 @@ public class Relationships {
 				
 			}
 		}
+		
+		this.name=this.source +" To "+this.target;
+		
 //		System.out.println(this.toString()+"\n\n");
 	}	
 }

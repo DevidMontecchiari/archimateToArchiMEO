@@ -26,49 +26,92 @@ public class Mapper {
 		this.ontology = ontology;
 		this.diagram = diagram;
 	}
-	
+
 	public String diagramToRDF() {
 		String rdf="";
-		HashMap<String, Elements> elements = this.diagram.elements;
+		String diagramRDF="mod:"+validateRDFid(this.diagram.name)+"\r";
+		diagramRDF+="  rdf:type archi:model ;\r";
 		
+		HashMap<String, Elements> elements = this.diagram.elements;
+
 		for (Map.Entry<String, Elements> item : elements.entrySet()) {
 			String key = item.getKey();
 			Elements elem = item.getValue();
-//			System.out.print(elem.toString()+"\n");
-			
+			//			System.out.print(elem.toString()+"\n");
+
 			if(this.ontology.archimate.containsKey("archi:"+elem.getXsiType())){
-//				System.out.print(elem.getXsiType()+"\n");
+				//				System.out.print(elem.getXsiType()+"\n");
 				String instanceName="mod:"+validateRDFid(elem.name.trim());
-				
+
 				ArrayList<String> types=new ArrayList<String>();
 				types.add("archi:"+elem.getXsiType());
-								
+
 				ArrayList<OntologyAttribute> attributes=new ArrayList<OntologyAttribute>();
-				OntologyAttribute label= new OntologyAttribute( "rdfs:label","","\""+elem.name.trim()+"\"");
+				OntologyAttribute label= new OntologyAttribute( "  rdfs:label","","\""+elem.name.trim()+"\"");
 				attributes.add(label);
-				
+				OntologyAttribute id= new OntologyAttribute( "  rdfs:comment","","\""+elem.identifier.trim()+"\"");
+				attributes.add(id);
+
 				OntologyInstance c= new OntologyInstance(instanceName, types, attributes);
-												
+
 				this.ontology.diagram.put(c.getName(), c);
-			//	System.out.print(c.toString()+"\n");
+
+				rdf+=c.toRDF()+"\n";
+				diagramRDF+="  archi:hasModellingElement " +c.getName()+" ;\r";
 			}else{
 				System.out.print("\nMissing!! "+ elem.getXsiType());
 			};			
 		}
-		
-		
-		
-		rdf=ontology.diagram.toString();
-		/*
-		 * TODO rdf print and eo check
-		 */
-		
-		return rdf;
+
+		HashMap<String, Relationships> relationships = this.diagram.relationships;
+
+		for (Map.Entry<String, Relationships> item : relationships.entrySet()) {
+			String key = item.getKey();
+			Relationships rel = item.getValue();
+			//System.out.print(rel.toString()+"\n");
+			
+			if(this.ontology.archimate.containsKey("archi:"+rel.getXsiType())){
+
+				String instanceName="mod:"+validateRDFid(rel.name.trim());
+
+				ArrayList<String> types=new ArrayList<String>();
+				types.add("archi:"+rel.getXsiType());
+
+				ArrayList<OntologyAttribute> attributes=new ArrayList<OntologyAttribute>();
+				//				OntologyAttribute label= new OntologyAttribute( "rdfs:label","","\""+rel.name.trim()+"\"");
+				//				attributes.add(label);
+
+				String domainName=diagram.elements.get(rel.source).name;
+				OntologyAttribute domain= new OntologyAttribute( "  rdfs:domain","","mod:"+validateRDFid(domainName));
+				attributes.add(domain);
+
+				String rangeName=diagram.elements.get(rel.target).name;
+				OntologyAttribute range= new OntologyAttribute( "  rdfs:range","","mod:"+validateRDFid(rangeName));
+				attributes.add(range);
+
+				OntologyAttribute id= new OntologyAttribute( "  rdfs:comment","","\""+rel.identifier.trim()+"\"");
+				attributes.add(id);
+
+				OntologyInstance c= new OntologyInstance(instanceName, types, attributes);
+
+				this.ontology.diagram.put(c.getName(), c);
+
+				rdf+=c.toRDF()+"\n";
+			}else{
+				System.out.print("\nMissing!! "+ rel.getXsiType());
+			};			
+		}
+
+		return rdf + diagramRDF +".\r";
 	}
 	public String validateRDFid(String s) {
-		String validated= s.replace(" ","_");
-		
-		return validated;
+		String newS=s;
+
+		newS=newS.trim().replaceAll("[^a-zA-Z0-9]+","_");
+
+		return newS;
 	}
-	
+
+
+
 }
