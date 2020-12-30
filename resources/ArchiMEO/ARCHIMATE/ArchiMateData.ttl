@@ -1,0 +1,65 @@
+# baseURI: http://ikm-group.ch/archiMEO/archimate
+# imports: http://ikm-group.ch/archiMEO/emo
+# imports: http://ikm-group.ch/archiMEO/eo
+# imports: http://ikm-group.ch/archiMEO/top
+# imports: http://ikm-group.ch/archimeo/iso42010
+
+@prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
+@prefix archiData: <http://ikm-group.ch/archiMEO/archimateData#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix emo: <http://ikm-group.ch/archiMEO/emo#> .
+@prefix eo: <http://ikm-group.ch/archiMEO/eo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfsplus: <http://topbraid.org/spin/rdfsplus#> .
+@prefix top: <http://ikm-group.ch/archiMEO/top#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+archiData:app 
+  rdf:type archi:BusinessInterface ;
+.
+
+archiData:webPage 
+  rdf:type archi:BusinessInterface ; 
+.
+
+archiData:bookCar
+  rdf:type archi:BusinessService;
+.
+
+archiData:ChangeCar 
+  rdf:type archi:BusinessService ;
+.
+
+archiData:appComponent
+  rdf:type archi:ApplicationInterface ;
+.
+
+archiData:appComponentRealizeApp
+  rdf:type archi:realizes ;
+  rdfs:domain archiData:appComponent ;
+  rdfs:range archiData:app ;
+. 
+
+archiData:badExampleModelInstance
+  rdf:type archi:model;
+  archi:hasModellingElement archiData:app ;
+  archi:hasModellingElement archiData:webPage ;
+  archi:hasModellingElement archiData:bookCar ;
+  archi:hasModellingElement archiData:ChangeCar ;
+.
+
+archiData:goodExampleModelInstance
+  rdf:type archi:model;
+  archi:hasModellingElement archiData:app ; #archi:BusinessInterface
+  archi:hasModellingElement archiData:webPage ; #archi:BusinessInterface
+  archi:hasModellingElement archiData:bookCar ; #archi:BusinessService
+  archi:hasModellingElement archiData:ChangeCar ; #archi:BusinessService
+  archi:hasModellingElement archiData:appComponent ; #archiData:appComponent
+  archi:hasModellingElement archiData:appComponentRealizeApp; #archi:realizes
+.
+
+
+  

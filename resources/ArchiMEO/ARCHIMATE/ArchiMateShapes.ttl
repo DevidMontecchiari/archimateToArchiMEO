@@ -1,0 +1,69 @@
+# baseURI: http://ikm-group.ch/archiMEO/archimate
+# imports: http://ikm-group.ch/archiMEO/emo
+# imports: http://ikm-group.ch/archiMEO/eo
+# imports: http://ikm-group.ch/archiMEO/top
+# imports: http://ikm-group.ch/archimeo/iso42010
+
+@prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
+@prefix archiData: <http://ikm-group.ch/archiMEO/archimateData#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix emo: <http://ikm-group.ch/archiMEO/emo#> .
+@prefix eo: <http://ikm-group.ch/archiMEO/eo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfsplus: <http://topbraid.org/spin/rdfsplus#> .
+@prefix top: <http://ikm-group.ch/archiMEO/top#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+archiData:hasModellingElement rdf:type rdf:Property ;
+.
+
+archi:hasConsistentChannels rdf:type rdf:Property ; 
+.
+
+archi:model 
+  rdf:type rdfs:Class ;
+  rdf:type sh:NodeShape ;
+  rdfs:label "Archimate Model" ;
+  sh:property [
+      sh:path archi:hasModellingElement  ;
+      sh:minCount 1 ;
+      ] ;
+  sh:rule archi:channelsConsistency ;
+.
+
+archi:channelsConsistency
+  rdf:type sh:SPARQLRule ;
+  sh:deactivated false ;
+  sh:construct """
+prefix archi: <http://ikm-group.ch/archiMEO/archimate#> 
+prefix cc: <http://creativecommons.org/ns#> 
+prefix dc: <http://purl.org/dc/elements/1.1/> 
+prefix emo: <http://ikm-group.ch/archiMEO/emo#> 
+prefix eo: <http://ikm-group.ch/archiMEO/eo#> 
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix rdfsplus: <http://topbraid.org/spin/rdfsplus#> 
+prefix top: <http://ikm-group.ch/archiMEO/top#> 
+prefix xsd: <http://www.w3.org/2001/XMLSchema#>
+prefix archiData: <http://ikm-group.ch/archiMEO/archimateData#> 
+
+CONSTRUCT {
+	$this archi:hasConsistentChannels true ;.
+}
+WHERE {
+$this rdf:type archi:model .
+$this archi:hasModellingElement ?BussChannel .
+$this archi:hasModellingElement ?AppChannel .
+?AppChannel rdf:type archi:ApplicationInterface .
+?BussChannel rdf:type archi:BusinessInterface .
+$this archi:hasModellingElement ?realize .
+?realize rdf:type archi:realizes .
+?realize rdfs:domain ?AppChanel .
+?realize rdfs:range ?BussChannel .
+}""" ;
+.
