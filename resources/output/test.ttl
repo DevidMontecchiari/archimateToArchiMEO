@@ -1,0 +1,389 @@
+# baseURI: http://ikm-group.ch/archiMEO/archimate
+# imports: http://ikm-group.ch/archiMEO/emo
+# imports: http://ikm-group.ch/archiMEO/eo
+# imports: http://ikm-group.ch/archiMEO/top
+# imports: http://ikm-group.ch/archimeo/iso42010
+
+@prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
+@prefix mod: <http://ikm-group.ch/archiMEO/mod#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix emo: <http://ikm-group.ch/archiMEO/emo#> .
+@prefix eo: <http://ikm-group.ch/archiMEO/eo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfsplus: <http://topbraid.org/spin/rdfsplus#> .
+@prefix top: <http://ikm-group.ch/archiMEO/top#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mod:Inconvenient_claim_submission
+  rdf:type archi:Assessment ;
+  rdfs:label "Inconvenient claim submission" ;
+  rdfs:comment "id-1151e543-4c7a-4e23-87c3-fa7c94cac442" ;
+.
+
+mod:CIO
+  rdf:type archi:Stakeholder ;
+  rdfs:label "CIO" ;
+  rdfs:comment "id-6c18b888-4da7-4f7b-931f-25c8a07dcd2d" ;
+.
+
+mod:Non_Executive_Director
+  rdf:type archi:Stakeholder ;
+  rdfs:label "Non-Executive Director" ;
+  rdfs:comment "id-a789ed94-2183-4351-a68a-875d776c3124" ;
+.
+
+mod:Economic_changes
+  rdf:type archi:Driver ;
+  rdfs:label "Economic changes" ;
+  rdfs:comment "id-9bc19f68-df3f-4bd7-88e8-904c26ab45be" ;
+.
+
+mod:Increased_Profitability
+  rdf:type archi:Outcome ;
+  rdfs:label "Increased Profitability" ;
+  rdfs:comment "id-c15faf0f-0cec-476d-bd6b-819ec6b7854a" ;
+.
+
+mod:Stock_value
+  rdf:type archi:Driver ;
+  rdfs:label "Stock value" ;
+  rdfs:comment "id-51c9be41-c9ab-4069-83ea-3b0ae479ea77" ;
+.
+
+mod:CFO
+  rdf:type archi:Stakeholder ;
+  rdfs:label "CFO" ;
+  rdfs:comment "id-583bbf9e-3250-4b94-a6cd-f1ca499fb385" ;
+.
+
+mod:Increased_Revenue
+  rdf:type archi:Outcome ;
+  rdfs:label "Increased Revenue" ;
+  rdfs:comment "id-1af7e3ad-bb15-4b8d-8d13-2915982b9ea5" ;
+.
+
+mod:Long_waiting_queues
+  rdf:type archi:Assessment ;
+  rdfs:label "Long waiting queues" ;
+  rdfs:comment "id-b9b4f439-a5f9-44d6-85be-fd6bcf98b208" ;
+.
+
+mod:Customer_satisfaction
+  rdf:type archi:Driver ;
+  rdfs:label "Customer satisfaction" ;
+  rdfs:comment "id-ab84d430-f8e5-4c10-b272-e58ad3bdc814" ;
+.
+
+mod:Improve_Profitability
+  rdf:type archi:Goal ;
+  rdfs:label "Improve Profitability" ;
+  rdfs:comment "id-aef8b2de-4576-4743-9e64-8229085e3b6b" ;
+.
+
+mod:Incomplete_and_inconsistent_information
+  rdf:type archi:Assessment ;
+  rdfs:label "Incomplete and inconsistent information" ;
+  rdfs:comment "id-a9d2d282-efce-4b35-b39e-72bce44f038b" ;
+.
+
+mod:Lack_of_insight_in_claim_status
+  rdf:type archi:Assessment ;
+  rdfs:label "Lack of insight in claim status" ;
+  rdfs:comment "id-bdd27239-41bb-43f6-a287-a9c51d41fcf8" ;
+.
+
+mod:Leaving_Customers
+  rdf:type archi:Assessment ;
+  rdfs:label "Leaving Customers" ;
+  rdfs:comment "id-f74b0a3b-6b25-4432-8a4f-dc3a5f41ad8f" ;
+.
+
+mod:Governing_Board
+  rdf:type archi:Stakeholder ;
+  rdfs:label "Governing Board" ;
+  rdfs:comment "id-aa536663-187d-43f8-ad85-ccd30c2cd580" ;
+.
+
+mod:Lack_of_insight_in_portfolio
+  rdf:type archi:Assessment ;
+  rdfs:label "Lack of insight in portfolio" ;
+  rdfs:comment "id-d0aebf76-ed3c-4a8f-bfc5-7d77458184b0" ;
+.
+
+mod:Increased_Market_Share
+  rdf:type archi:Outcome ;
+  rdfs:label "Increased Market Share" ;
+  rdfs:comment "id-2edd330b-a78a-4817-9d30-95dc9cd8418c" ;
+.
+
+mod:Profit
+  rdf:type archi:Driver ;
+  rdfs:label "Profit" ;
+  rdfs:comment "id-9f3bca76-bb74-4169-ab5f-fb45ae497e0a" ;
+.
+
+mod:Customer
+  rdf:type archi:Stakeholder ;
+  rdfs:label "Customer" ;
+  rdfs:comment "id-4915ba41-81da-46ee-ad1e-bdbf76c4356f" ;
+.
+
+mod:Serve_Customers_wherever_they_are
+  rdf:type archi:Principle ;
+  rdfs:label "Serve Customers wherever they are" ;
+  rdfs:comment "id-48a6705d-f91e-4a29-8098-a98d592eaf6c" ;
+.
+
+mod:Complaining_Customers
+  rdf:type archi:Assessment ;
+  rdfs:label "Complaining Customers" ;
+  rdfs:comment "id-e1f7cc55-9961-4a28-a5ce-e349348c695e" ;
+.
+
+mod:Helpdesk_Support
+  rdf:type archi:Driver ;
+  rdfs:label "Helpdesk Support" ;
+  rdfs:comment "id-735960c3-44c6-49a5-87e9-21e39bccb96e" ;
+.
+
+mod:High_service_times
+  rdf:type archi:Assessment ;
+  rdfs:label "High service times" ;
+  rdfs:comment "id-efaf7c7d-e04f-47c8-b311-8cd00e43fb55" ;
+.
+
+mod:CEO
+  rdf:type archi:Stakeholder ;
+  rdfs:label "CEO" ;
+  rdfs:comment "id-3518fdad-79e8-45e8-a35d-3ad4eb0d5b8e" ;
+.
+
+mod:Shareholder_satisfaction
+  rdf:type archi:Driver ;
+  rdfs:label "Shareholder satisfaction" ;
+  rdfs:comment "id-5f04f154-33fb-4291-9947-5ae14ae4fdea" ;
+.
+
+mod:CEOAssociationShareholder_satisfaction
+  rdf:type archi:Association ;
+  rdfs:domain mod:CEO ;
+  rdfs:range mod:Shareholder_satisfaction ;
+  rdfs:comment "id-5777a01c-4c06-4557-8c25-1aee68d6208a" ;
+.
+
+mod:Customer_satisfactionAssociationLeaving_Customers
+  rdf:type archi:Association ;
+  rdfs:domain mod:Customer_satisfaction ;
+  rdfs:range mod:Leaving_Customers ;
+  rdfs:comment "id-5df9d556-bc38-4066-ac45-3ba869436da7" ;
+.
+
+mod:Customer_satisfactionAssociationComplaining_Customers
+  rdf:type archi:Association ;
+  rdfs:domain mod:Customer_satisfaction ;
+  rdfs:range mod:Complaining_Customers ;
+  rdfs:comment "id-919afecc-bb40-484a-b974-660ebcd49039" ;
+.
+
+mod:Increased_Market_ShareInfluenceIncreased_Profitability
+  rdf:type archi:Influence ;
+  rdfs:domain mod:Increased_Market_Share ;
+  rdfs:range mod:Increased_Profitability ;
+  rdfs:comment "id-931975f9-b83b-4207-a20b-b4c034987e3f" ;
+.
+
+mod:Shareholder_satisfactionAggregationStock_value
+  rdf:type archi:Aggregation ;
+  rdfs:domain mod:Shareholder_satisfaction ;
+  rdfs:range mod:Stock_value ;
+  rdfs:comment "id-9fb6b6da-5362-4a81-abee-0f0d1197d457" ;
+.
+
+mod:Governing_BoardAggregationNon_Executive_Director
+  rdf:type archi:Aggregation ;
+  rdfs:domain mod:Governing_Board ;
+  rdfs:range mod:Non_Executive_Director ;
+  rdfs:comment "id-bd3325a0-22c1-4697-8084-e24d15343ac2" ;
+.
+
+mod:Complaining_CustomersAggregationLack_of_insight_in_portfolio
+  rdf:type archi:Aggregation ;
+  rdfs:domain mod:Complaining_Customers ;
+  rdfs:range mod:Lack_of_insight_in_portfolio ;
+  rdfs:comment "id-8a4d3b42-be8c-4349-8242-c9c0aaf4c622" ;
+.
+
+mod:Helpdesk_SupportAssociationHigh_service_times
+  rdf:type archi:Association ;
+  rdfs:domain mod:Helpdesk_Support ;
+  rdfs:range mod:High_service_times ;
+  rdfs:comment "id-195e5b79-bc9a-49dc-a391-1ec4c6781415" ;
+.
+
+mod:Governing_BoardAggregationCEO
+  rdf:type archi:Aggregation ;
+  rdfs:domain mod:Governing_Board ;
+  rdfs:range mod:CEO ;
+  rdfs:comment "id-4a4e8c9b-2293-4ed5-8f20-ddb71ef7804d" ;
+.
+
+mod:Governing_BoardAggregationCIO
+  rdf:type archi:Aggregation ;
+  rdfs:domain mod:Governing_Board ;
+  rdfs:range mod:CIO ;
+  rdfs:comment "id-dc696a9c-b1c6-483b-a137-c04e1e2cc36e" ;
+.
+
+mod:Economic_changesInfluenceStock_value
+  rdf:type archi:Influence ;
+  rdfs:domain mod:Economic_changes ;
+  rdfs:range mod:Stock_value ;
+  rdfs:comment "id-877723ca-268d-4173-9ece-5c5f6fe07270" ;
+.
+
+mod:Serve_Customers_wherever_they_areRealizationIncreased_Revenue
+  rdf:type archi:Realization ;
+  rdfs:domain mod:Serve_Customers_wherever_they_are ;
+  rdfs:range mod:Increased_Revenue ;
+  rdfs:comment "id-6ede7956-1f8f-4f6c-b5df-0db707257853" ;
+.
+
+mod:CustomerAssociationCustomer_satisfaction
+  rdf:type archi:Association ;
+  rdfs:domain mod:Customer ;
+  rdfs:range mod:Customer_satisfaction ;
+  rdfs:comment "id-7c5e0b64-cc5e-42eb-8d87-42e91b5d9c2e" ;
+.
+
+mod:Increased_RevenueInfluenceIncreased_Profitability
+  rdf:type archi:Influence ;
+  rdfs:domain mod:Increased_Revenue ;
+  rdfs:range mod:Increased_Profitability ;
+  rdfs:comment "id-41d6292c-7e58-49ee-b5ab-45c6929476af" ;
+.
+
+mod:Increased_ProfitabilityRealizationImprove_Profitability
+  rdf:type archi:Realization ;
+  rdfs:domain mod:Increased_Profitability ;
+  rdfs:range mod:Improve_Profitability ;
+  rdfs:comment "id-0259da0e-3310-4866-857a-08e9b3440e0f" ;
+.
+
+mod:Complaining_CustomersAggregationInconvenient_claim_submission
+  rdf:type archi:Aggregation ;
+  rdfs:domain mod:Complaining_Customers ;
+  rdfs:range mod:Inconvenient_claim_submission ;
+  rdfs:comment "id-d3b3dd2f-a208-449c-8713-1fae8d128535" ;
+.
+
+mod:Complaining_CustomersAggregationIncomplete_and_inconsistent_information
+  rdf:type archi:Aggregation ;
+  rdfs:domain mod:Complaining_Customers ;
+  rdfs:range mod:Incomplete_and_inconsistent_information ;
+  rdfs:comment "id-de2489cb-eea6-4227-a0be-0f31d3e05bb4" ;
+.
+
+mod:Increased_Market_ShareInfluenceIncreased_Revenue
+  rdf:type archi:Influence ;
+  rdfs:domain mod:Increased_Market_Share ;
+  rdfs:range mod:Increased_Revenue ;
+  rdfs:comment "id-93603835-34ba-4a98-8d1c-4cf7c0368830" ;
+.
+
+mod:Shareholder_satisfactionAggregationProfit
+  rdf:type archi:Aggregation ;
+  rdfs:domain mod:Shareholder_satisfaction ;
+  rdfs:range mod:Profit ;
+  rdfs:comment "id-48fdf664-b0e4-4d83-90de-28d22f65fb81" ;
+.
+
+mod:Governing_BoardAggregationCFO
+  rdf:type archi:Aggregation ;
+  rdfs:domain mod:Governing_Board ;
+  rdfs:range mod:CFO ;
+  rdfs:comment "id-a2272440-d4db-4b86-b155-d454e260603c" ;
+.
+
+mod:Serve_Customers_wherever_they_areRealizationIncreased_Market_Share
+  rdf:type archi:Realization ;
+  rdfs:domain mod:Serve_Customers_wherever_they_are ;
+  rdfs:range mod:Increased_Market_Share ;
+  rdfs:comment "id-b3ee31d8-89bd-4f57-82fe-d0377868f870" ;
+.
+
+mod:Helpdesk_SupportAssociationLong_waiting_queues
+  rdf:type archi:Association ;
+  rdfs:domain mod:Helpdesk_Support ;
+  rdfs:range mod:Long_waiting_queues ;
+  rdfs:comment "id-351ec152-6c9f-4bc7-9d2c-5fa4c3925eb4" ;
+.
+
+mod:Complaining_CustomersAggregationLack_of_insight_in_claim_status
+  rdf:type archi:Aggregation ;
+  rdfs:domain mod:Complaining_Customers ;
+  rdfs:range mod:Lack_of_insight_in_claim_status ;
+  rdfs:comment "id-d4de1dcd-4c3e-4f54-b28b-a328473c9fc1" ;
+.
+
+mod:CEOAssociationCustomer_satisfaction
+  rdf:type archi:Association ;
+  rdfs:domain mod:CEO ;
+  rdfs:range mod:Customer_satisfaction ;
+  rdfs:comment "id-f6292122-d920-4490-bbc1-908ae7b59f16" ;
+.
+
+mod:Interoperability_testing_snippet_2
+  rdf:type archi:model ;
+  archi:hasModellingElement mod:Inconvenient_claim_submission ;
+  archi:hasModellingElement mod:CIO ;
+  archi:hasModellingElement mod:Non_Executive_Director ;
+  archi:hasModellingElement mod:Economic_changes ;
+  archi:hasModellingElement mod:Increased_Profitability ;
+  archi:hasModellingElement mod:Stock_value ;
+  archi:hasModellingElement mod:CFO ;
+  archi:hasModellingElement mod:Increased_Revenue ;
+  archi:hasModellingElement mod:Long_waiting_queues ;
+  archi:hasModellingElement mod:Customer_satisfaction ;
+  archi:hasModellingElement mod:Improve_Profitability ;
+  archi:hasModellingElement mod:Incomplete_and_inconsistent_information ;
+  archi:hasModellingElement mod:Lack_of_insight_in_claim_status ;
+  archi:hasModellingElement mod:Leaving_Customers ;
+  archi:hasModellingElement mod:Governing_Board ;
+  archi:hasModellingElement mod:Lack_of_insight_in_portfolio ;
+  archi:hasModellingElement mod:Increased_Market_Share ;
+  archi:hasModellingElement mod:Profit ;
+  archi:hasModellingElement mod:Customer ;
+  archi:hasModellingElement mod:Serve_Customers_wherever_they_are ;
+  archi:hasModellingElement mod:Complaining_Customers ;
+  archi:hasModellingElement mod:Helpdesk_Support ;
+  archi:hasModellingElement mod:High_service_times ;
+  archi:hasModellingElement mod:CEO ;
+  archi:hasModellingElement mod:Shareholder_satisfaction ;
+  archi:hasModellingElement mod:CEOAssociationShareholder_satisfaction ;
+  archi:hasModellingElement mod:Customer_satisfactionAssociationLeaving_Customers ;
+  archi:hasModellingElement mod:Customer_satisfactionAssociationComplaining_Customers ;
+  archi:hasModellingElement mod:Increased_Market_ShareInfluenceIncreased_Profitability ;
+  archi:hasModellingElement mod:Shareholder_satisfactionAggregationStock_value ;
+  archi:hasModellingElement mod:Governing_BoardAggregationNon_Executive_Director ;
+  archi:hasModellingElement mod:Complaining_CustomersAggregationLack_of_insight_in_portfolio ;
+  archi:hasModellingElement mod:Helpdesk_SupportAssociationHigh_service_times ;
+  archi:hasModellingElement mod:Governing_BoardAggregationCEO ;
+  archi:hasModellingElement mod:Governing_BoardAggregationCIO ;
+  archi:hasModellingElement mod:Economic_changesInfluenceStock_value ;
+  archi:hasModellingElement mod:Serve_Customers_wherever_they_areRealizationIncreased_Revenue ;
+  archi:hasModellingElement mod:CustomerAssociationCustomer_satisfaction ;
+  archi:hasModellingElement mod:Increased_RevenueInfluenceIncreased_Profitability ;
+  archi:hasModellingElement mod:Increased_ProfitabilityRealizationImprove_Profitability ;
+  archi:hasModellingElement mod:Complaining_CustomersAggregationInconvenient_claim_submission ;
+  archi:hasModellingElement mod:Complaining_CustomersAggregationIncomplete_and_inconsistent_information ;
+  archi:hasModellingElement mod:Increased_Market_ShareInfluenceIncreased_Revenue ;
+  archi:hasModellingElement mod:Shareholder_satisfactionAggregationProfit ;
+  archi:hasModellingElement mod:Governing_BoardAggregationCFO ;
+  archi:hasModellingElement mod:Serve_Customers_wherever_they_areRealizationIncreased_Market_Share ;
+  archi:hasModellingElement mod:Helpdesk_SupportAssociationLong_waiting_queues ;
+  archi:hasModellingElement mod:Complaining_CustomersAggregationLack_of_insight_in_claim_status ;
+  archi:hasModellingElement mod:CEOAssociationCustomer_satisfaction ;
+.

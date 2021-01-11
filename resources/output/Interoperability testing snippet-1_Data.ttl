@@ -1,0 +1,122 @@
+# baseURI: http://ikm-group.ch/archiMEO/archimate
+# imports: http://ikm-group.ch/archiMEO/emo
+# imports: http://ikm-group.ch/archiMEO/eo
+# imports: http://ikm-group.ch/archiMEO/top
+# imports: http://ikm-group.ch/archimeo/iso42010
+
+@prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
+@prefix mod: <http://ikm-group.ch/archiMEO/mod#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix emo: <http://ikm-group.ch/archiMEO/emo#> .
+@prefix eo: <http://ikm-group.ch/archiMEO/eo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfsplus: <http://topbraid.org/spin/rdfsplus#> .
+@prefix top: <http://ikm-group.ch/archiMEO/top#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mod:Web_server  rdf:type archi:Device ;  rdfs:label "Web server" ;  rdfs:comment "id-89a3ec7d-ec9f-47eb-ab29-c8ee629d27eb" ;.
+
+mod:Internet  rdf:type archi:CommunicationNetwork ;  rdfs:label "Internet" ;  rdfs:comment "id-2d231c8f-3462-4e9f-ab55-d86b077d7a89" ;.
+
+mod:Back_Office_application_server  rdf:type archi:Device ;  rdfs:label "Back Office application server" ;  rdfs:comment "id-787ad6a1-2231-4d5e-8a61-864327aef573" ;.
+
+mod:Front_Office_application_server  rdf:type archi:Device ;  rdfs:label "Front Office application server" ;  rdfs:comment "id-ea7658b9-be39-4e1f-9e48-d6fc4b0ba37c" ;.
+
+mod:Firewall  rdf:type archi:Node ;  rdfs:label "Firewall" ;  rdfs:comment "id-267c7a3b-bbfa-45ac-b2c7-ec7312598154" ;.
+
+mod:ArchiSurance_Office  rdf:type archi:Location ;  rdfs:label "ArchiSurance Office" ;  rdfs:comment "id-297c9467-cdf2-4b09-9e98-e588c576fe23" ;.
+
+mod:J2EE_Application_Server  rdf:type archi:SystemSoftware ;  rdfs:label "J2EE Application Server" ;  rdfs:comment "id-3fc8c4c7-8526-460f-915f-b21a370f4bd3" ;.
+
+mod:Blade  rdf:type archi:Device ;  rdfs:label "Blade" ;  rdfs:comment "id-d32fee87-70e9-48e4-bf2a-c0811ee04e80" ;.
+
+mod:LAN_L1  rdf:type archi:CommunicationNetwork ;  rdfs:label "LAN L1" ;  rdfs:comment "id-1ac2971d-9721-4876-b783-3337cd38ed49" ;.
+
+mod:UNIX_Server_Farm  rdf:type archi:Node ;  rdfs:label "UNIX Server Farm" ;  rdfs:comment "id-a36a629f-c422-425d-a5e3-5e3364c5a21a" ;.
+
+mod:Message_Queuing  rdf:type archi:SystemSoftware ;  rdfs:label "Message Queuing" ;  rdfs:comment "id-679040c4-8188-418e-babc-0ceb66214e4b" ;.
+
+mod:UNIX_Server  rdf:type archi:Device ;  rdfs:label "UNIX Server" ;  rdfs:comment "id-65871168-8837-4cd1-806a-4b73449b4476" ;.
+
+mod:Mainframe  rdf:type archi:Node ;  rdfs:label "Mainframe" ;  rdfs:comment "id-545223ec-e8a6-4e39-af68-d7ae48820cd9" ;.
+
+mod:LAN_L2  rdf:type archi:CommunicationNetwork ;  rdfs:label "LAN L2" ;  rdfs:comment "id-7c68fdbd-dffa-4982-b141-0b3b72325524" ;.
+
+mod:Database_Service  rdf:type archi:TechnologyService ;  rdfs:label "Database Service" ;  rdfs:comment "id-2d0964d0-6843-4b0a-96a3-f6027efa5561" ;.
+
+mod:Nas_File_Server  rdf:type archi:Device ;  rdfs:label "Nas File Server" ;  rdfs:comment "id-919c56cf-e761-4772-a0c1-768ce49a514c" ;.
+
+mod:Network_Service  rdf:type archi:TechnologyService ;  rdfs:label "Network Service" ;  rdfs:comment "id-5090b1f5-bc5f-4225-97cb-765cf80f95e5" ;.
+
+mod:DBMS  rdf:type archi:SystemSoftware ;  rdfs:label "DBMS" ;  rdfs:comment "id-dd5d2b29-00e2-4974-98f9-72659ccbb7f8" ;.
+
+mod:Message_queuing  rdf:type archi:Path ;  rdfs:label "Message queuing" ;  rdfs:comment "id-395d19cc-b299-4dc6-a073-53601562eae5" ;.
+
+mod:Application_server  rdf:type archi:Node ;  rdfs:label "Application server" ;  rdfs:comment "id-4ecf7b1b-3b74-4536-9465-b4ce79e225b5" ;.
+
+mod:Transaction_Server  rdf:type archi:SystemSoftware ;  rdfs:label "Transaction Server" ;  rdfs:comment "id-c571daef-26a5-4982-9f43-4d444b15dce8" ;.
+
+mod:Client_device  rdf:type archi:Node ;  rdfs:label "Client device" ;  rdfs:comment "id-5d1855ae-42c6-4af8-8679-0974b3631fbe" ;.
+
+mod:File_Service  rdf:type archi:TechnologyService ;  rdfs:label "File Service" ;  rdfs:comment "id-c08db88a-4031-4d25-b901-18b590781ec6" ;.
+
+mod:Application_server_AS1  rdf:type archi:Node ;  rdfs:label "Application server AS1" ;  rdfs:comment "id-58fc23fa-aea6-4bde-8620-8e8314154dc6" ;.
+
+mod:UNIX_Server  rdf:type archi:Device ;  rdfs:label "UNIX Server" ;  rdfs:comment "id-5ef201b4-e37d-4cd1-a7db-c09f438eeea6" ;.
+
+mod:ArchiSurance_OfficeCompositionLAN_L2  rdf:type archi:Composition ;  rdfs:domain mod:ArchiSurance_Office ;  rdfs:range mod:LAN_L2 ;  rdfs:comment "id-fb6b3686-c473-47c7-ba50-5a5002619020" ;.
+
+mod:ArchiSurance_OfficeCompositionMainframe  rdf:type archi:Composition ;  rdfs:domain mod:ArchiSurance_Office ;  rdfs:range mod:Mainframe ;  rdfs:comment "id-527f9cde-b0c8-4fc1-9934-2b09f851005e" ;.
+
+mod:MainframeCompositionTransaction_Server  rdf:type archi:Composition ;  rdfs:domain mod:Mainframe ;  rdfs:range mod:Transaction_Server ;  rdfs:comment "id-fdb2e438-7681-48db-9938-6c78347d3bc3" ;.
+
+mod:LAN_L2AssociationNas_File_Server  rdf:type archi:Association ;  rdfs:domain mod:LAN_L2 ;  rdfs:range mod:Nas_File_Server ;  rdfs:comment "id-11dd4df2-915d-49c4-9fc9-d477edbad5e7" ;.
+
+mod:Message_queuingAggregationApplication_server  rdf:type archi:Aggregation ;  rdfs:domain mod:Message_queuing ;  rdfs:range mod:Application_server ;  rdfs:comment "id-74df7507-644e-4dbf-be97-a838070e81a4" ;.
+
+mod:UNIX_Server_FarmCompositionUNIX_Server  rdf:type archi:Composition ;  rdfs:domain mod:UNIX_Server_Farm ;  rdfs:range mod:UNIX_Server ;  rdfs:comment "id-d1036297-9daa-456d-b7e1-50222b067359" ;.
+
+mod:ArchiSurance_OfficeCompositionNas_File_Server  rdf:type archi:Composition ;  rdfs:domain mod:ArchiSurance_Office ;  rdfs:range mod:Nas_File_Server ;  rdfs:comment "id-2d5319dc-7844-49e5-9635-9afa767984b0" ;.
+
+mod:Message_queuingAggregationClient_device  rdf:type archi:Aggregation ;  rdfs:domain mod:Message_queuing ;  rdfs:range mod:Client_device ;  rdfs:comment "id-a521ff53-69b7-4cca-a52c-732b23443385" ;.
+
+mod:ArchiSurance_OfficeCompositionFirewall  rdf:type archi:Composition ;  rdfs:domain mod:ArchiSurance_Office ;  rdfs:range mod:Firewall ;  rdfs:comment "id-c690dd53-7ad8-4f69-9bc4-c5ee106bd0b5" ;.
+
+mod:LAN_L2AssociationMainframe  rdf:type archi:Association ;  rdfs:domain mod:LAN_L2 ;  rdfs:range mod:Mainframe ;  rdfs:comment "id-4b73ebd8-63ff-401d-bebe-0ab91b64a7df" ;.
+
+mod:BladeAssignmentJ2EE_Application_Server  rdf:type archi:Assignment ;  rdfs:domain mod:Blade ;  rdfs:range mod:J2EE_Application_Server ;  rdfs:comment "id-77602286-0976-4b53-a665-07f0d83b915d" ;.
+
+mod:Application_server_AS1CompositionBlade  rdf:type archi:Composition ;  rdfs:domain mod:Application_server_AS1 ;  rdfs:range mod:Blade ;  rdfs:comment "id-da41f1a3-55f7-44d7-9d5f-695821d5edb3" ;.
+
+mod:FirewallAssociationLAN_L2  rdf:type archi:Association ;  rdfs:domain mod:Firewall ;  rdfs:range mod:LAN_L2 ;  rdfs:comment "id-7cbf7de4-2409-423b-b795-6f31a7470763" ;.
+
+mod:FirewallRealizationNetwork_Service  rdf:type archi:Realization ;  rdfs:domain mod:Firewall ;  rdfs:range mod:Network_Service ;  rdfs:comment "id-76013a98-bbec-4af1-9a2c-cba8826b4423" ;.
+
+mod:UNIX_Server_FarmCompositionUNIX_Server  rdf:type archi:Composition ;  rdfs:domain mod:UNIX_Server_Farm ;  rdfs:range mod:UNIX_Server ;  rdfs:comment "id-508d5dda-aded-4a0f-9eec-b86a331c143c" ;.
+
+mod:MainframeCompositionDBMS  rdf:type archi:Composition ;  rdfs:domain mod:Mainframe ;  rdfs:range mod:DBMS ;  rdfs:comment "id-e5ec76b0-fa07-4ea6-8e63-f5b73699ce9e" ;.
+
+mod:LAN_L1AssociationFront_Office_application_server  rdf:type archi:Association ;  rdfs:domain mod:LAN_L1 ;  rdfs:range mod:Front_Office_application_server ;  rdfs:comment "id-1845129a-8ffc-4984-ba70-b7bb1e88da27" ;.
+
+mod:LAN_L1AssociationWeb_server  rdf:type archi:Association ;  rdfs:domain mod:LAN_L1 ;  rdfs:range mod:Web_server ;  rdfs:comment "id-a7b88190-68e4-4d5e-9391-d35f1b613560" ;.
+
+mod:LAN_L2AssociationUNIX_Server_Farm  rdf:type archi:Association ;  rdfs:domain mod:LAN_L2 ;  rdfs:range mod:UNIX_Server_Farm ;  rdfs:comment "id-5ffefa6a-3046-4fd3-8137-e704d2650d45" ;.
+
+mod:InternetAssociationFirewall  rdf:type archi:Association ;  rdfs:domain mod:Internet ;  rdfs:range mod:Firewall ;  rdfs:comment "id-7c3aebe5-6d92-486f-90c4-73765cfabbd2" ;.
+
+mod:MainframeCompositionMessage_Queuing  rdf:type archi:Composition ;  rdfs:domain mod:Mainframe ;  rdfs:range mod:Message_Queuing ;  rdfs:comment "id-c7028bd2-888f-435a-b23d-729cba0be8bc" ;.
+
+mod:Nas_File_ServerRealizationFile_Service  rdf:type archi:Realization ;  rdfs:domain mod:Nas_File_Server ;  rdfs:range mod:File_Service ;  rdfs:comment "id-341c5375-7fc5-4d27-b541-8885fa050b54" ;.
+
+mod:ArchiSurance_OfficeAssociationLAN_L2  rdf:type archi:Association ;  rdfs:domain mod:ArchiSurance_Office ;  rdfs:range mod:LAN_L2 ;  rdfs:comment "id-bbe66f4f-dde0-4d0d-ae80-d47a6cb98940" ;.
+
+mod:MainframeRealizationDatabase_Service  rdf:type archi:Realization ;  rdfs:domain mod:Mainframe ;  rdfs:range mod:Database_Service ;  rdfs:comment "id-34f1f7e5-c176-4c71-bd1a-77c21480bd4e" ;.
+
+mod:ArchiSurance_OfficeCompositionUNIX_Server_Farm  rdf:type archi:Composition ;  rdfs:domain mod:ArchiSurance_Office ;  rdfs:range mod:UNIX_Server_Farm ;  rdfs:comment "id-fb6c16b4-36ec-4b05-bed8-0f2c2fa81da8" ;.
+
+mod:LAN_L1AssociationBack_Office_application_server  rdf:type archi:Association ;  rdfs:domain mod:LAN_L1 ;  rdfs:range mod:Back_Office_application_server ;  rdfs:comment "id-21fe61e7-30b9-49d8-a046-39fe19e08753" ;.
+
+mod:Interoperability_testing_snippet_1  rdf:type archi:model ;  archi:hasModellingElement mod:Web_server ;  archi:hasModellingElement mod:Internet ;  archi:hasModellingElement mod:Back_Office_application_server ;  archi:hasModellingElement mod:Front_Office_application_server ;  archi:hasModellingElement mod:Firewall ;  archi:hasModellingElement mod:ArchiSurance_Office ;  archi:hasModellingElement mod:J2EE_Application_Server ;  archi:hasModellingElement mod:Blade ;  archi:hasModellingElement mod:LAN_L1 ;  archi:hasModellingElement mod:UNIX_Server_Farm ;  archi:hasModellingElement mod:Message_Queuing ;  archi:hasModellingElement mod:UNIX_Server ;  archi:hasModellingElement mod:Mainframe ;  archi:hasModellingElement mod:LAN_L2 ;  archi:hasModellingElement mod:Database_Service ;  archi:hasModellingElement mod:Nas_File_Server ;  archi:hasModellingElement mod:Network_Service ;  archi:hasModellingElement mod:DBMS ;  archi:hasModellingElement mod:Message_queuing ;  archi:hasModellingElement mod:Application_server ;  archi:hasModellingElement mod:Transaction_Server ;  archi:hasModellingElement mod:Client_device ;  archi:hasModellingElement mod:File_Service ;  archi:hasModellingElement mod:Application_server_AS1 ;  archi:hasModellingElement mod:UNIX_Server ;  archi:hasModellingElement mod:ArchiSurance_OfficeCompositionLAN_L2 ;  archi:hasModellingElement mod:ArchiSurance_OfficeCompositionMainframe ;  archi:hasModellingElement mod:MainframeCompositionTransaction_Server ;  archi:hasModellingElement mod:LAN_L2AssociationNas_File_Server ;  archi:hasModellingElement mod:Message_queuingAggregationApplication_server ;  archi:hasModellingElement mod:UNIX_Server_FarmCompositionUNIX_Server ;  archi:hasModellingElement mod:ArchiSurance_OfficeCompositionNas_File_Server ;  archi:hasModellingElement mod:Message_queuingAggregationClient_device ;  archi:hasModellingElement mod:ArchiSurance_OfficeCompositionFirewall ;  archi:hasModellingElement mod:LAN_L2AssociationMainframe ;  archi:hasModellingElement mod:BladeAssignmentJ2EE_Application_Server ;  archi:hasModellingElement mod:Application_server_AS1CompositionBlade ;  archi:hasModellingElement mod:FirewallAssociationLAN_L2 ;  archi:hasModellingElement mod:FirewallRealizationNetwork_Service ;  archi:hasModellingElement mod:UNIX_Server_FarmCompositionUNIX_Server ;  archi:hasModellingElement mod:MainframeCompositionDBMS ;  archi:hasModellingElement mod:LAN_L1AssociationFront_Office_application_server ;  archi:hasModellingElement mod:LAN_L1AssociationWeb_server ;  archi:hasModellingElement mod:LAN_L2AssociationUNIX_Server_Farm ;  archi:hasModellingElement mod:InternetAssociationFirewall ;  archi:hasModellingElement mod:MainframeCompositionMessage_Queuing ;  archi:hasModellingElement mod:Nas_File_ServerRealizationFile_Service ;  archi:hasModellingElement mod:ArchiSurance_OfficeAssociationLAN_L2 ;  archi:hasModellingElement mod:MainframeRealizationDatabase_Service ;  archi:hasModellingElement mod:ArchiSurance_OfficeCompositionUNIX_Server_Farm ;  archi:hasModellingElement mod:LAN_L1AssociationBack_Office_application_server ;.

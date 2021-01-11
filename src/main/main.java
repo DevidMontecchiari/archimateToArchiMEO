@@ -1,8 +1,13 @@
-package archimateToArchiMEO;
+package main;
 
+import java.io.FileOutputStream;
+import java.io.PrintStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
+import archimateToArchiMEO.Mapper;
+import archimateToArchiMEO.archimateDiagram;
+import archimateToArchiMEO.xmlModel;
 import ontologyManager.Operation;
 
 public class main {
@@ -10,7 +15,19 @@ public class main {
 	public static void main(String[] args) throws Exception {
 //		// TODO Auto-generated method stub
 		//String raw=readFileAsString("resources//test.xml");
-		String raw=readFileAsString("resources//MDM.xml");
+//		String raw=readFileAsString("resources//MDM.xml");
+		
+//		String raw=readFileAsString("resources//Interoperability//examples//snippet//Interoperability testing snippet-1.xml");
+//		String raw=readFileAsString("resources//Interoperability//examples//snippet//Interoperability testing snippet-2.xml");
+//		String raw=readFileAsString("resources//Interoperability//examples//snippet//Interoperability testing snippet-3.xml");
+//		String raw=readFileAsString("resources//Interoperability//examples//snippet//Interoperability testing snippet-4.xml");
+//		String raw=readFileAsString("resources//Interoperability//examples//snippet//Interoperability testing snippet-5.xml");
+//		String raw=readFileAsString("resources//Interoperability//examples//snippet//Interoperability testing snippet-6.xml");
+//		String raw=readFileAsString("resources//Interoperability//examples//snippet//Interoperability testing snippet-7.xml");
+//		String raw=readFileAsString("resources//Interoperability//examples//snippet//Interoperability testing snippet-8.xml");
+//		String raw=readFileAsString("resources//Interoperability//examples//snippet//Interoperability testing snippet-9.xml");
+		String raw=readFileAsString("resources//Interoperability//examples//snippet//Interoperability testing snippet-10.xml");
+			
 		xmlModel xmlModel=new xmlModel(raw);
 		
 		archimateDiagram model=new archimateDiagram(xmlModel);
@@ -50,7 +67,11 @@ public class main {
 				"@prefix top: <http://ikm-group.ch/archiMEO/top#> .\r\n" + 
 				"@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\r\n";
 		
-		System.out.print(imports+"\n"+mapper.diagramToRDF());
+		String data=imports+"\n"+mapper.diagramToRDF();
+		
+		try (PrintStream out = new PrintStream(new FileOutputStream("Resources\\OUTPUT\\"+ mapper.diagram.name +"_Data.ttl"))) {
+			out.print(data);
+		}
 	}
 	
 	public static String readFileAsString(String fileName)throws Exception 

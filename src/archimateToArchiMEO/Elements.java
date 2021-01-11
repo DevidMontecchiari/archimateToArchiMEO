@@ -48,15 +48,30 @@ public class Elements {
 	}
 	
 	public void updateElementData(String raw) {
-		this.raw=raw;
-//		System.out.println(raw);
-		this.name= (String) this.raw.subSequence(this.raw.indexOf("<name>")+ ("<name>").length(), this.raw.indexOf("</name>"));
-//		System.out.println(this.name);
+	this.raw=raw;
+//		System.out.println("raw "+raw);
+		
+		if(raw.contains("<name xml:lang=\"en\">")) {
+			this.name= (String) this.raw.subSequence(this.raw.indexOf("<name xml:lang=\"en\">")+ ("<name xml:lang=\"en\">").length(), this.raw.indexOf("</name>"));
+//			System.out.println("name "+this.name);
+		}else {
+			this.name= (String) this.raw.subSequence(this.raw.indexOf("<name>")+ ("<name>").length(), this.raw.indexOf("</name>"));
+//			System.out.println("name "+this.name);
+		}
+		
 		this.identifier= (String) this.raw.subSequence(this.raw.indexOf("<element identifier=\"")+ ("<element identifier=\"").length() , this.raw.indexOf("\" xsi:type=\""));
 //		System.out.println(this.identifier);
-		String xsiTypeRaw=(String) this.raw.subSequence(this.raw.indexOf("xsi:type=\"")+ ("xsi:type=\"").length() , this.raw.indexOf("<name>"));
-		this.xsiType=(String) xsiTypeRaw.subSequence(0, xsiTypeRaw.indexOf("\""));
-//		System.out.println(this.xsiType);
+		
+		if(raw.contains("<name xml:lang=\"en\">")) {
+			String xsiTypeRaw=(String) this.raw.subSequence(this.raw.indexOf("xsi:type=\"")+ ("xsi:type=\"").length() , this.raw.indexOf("<name xml:lang=\"en\">"));
+			this.xsiType=(String) xsiTypeRaw.subSequence(0, xsiTypeRaw.indexOf("\""));
+//			System.out.println(this.xsiType);
+		}else {
+			String xsiTypeRaw=(String) this.raw.subSequence(this.raw.indexOf("xsi:type=\"")+ ("xsi:type=\"").length() , this.raw.indexOf("<name>"));
+			this.xsiType=(String) xsiTypeRaw.subSequence(0, xsiTypeRaw.indexOf("\""));
+//			System.out.println(this.xsiType);	
+		}
+		
 		
 	}
 

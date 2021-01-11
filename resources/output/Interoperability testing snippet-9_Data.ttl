@@ -1,0 +1,200 @@
+# baseURI: http://ikm-group.ch/archiMEO/archimate
+# imports: http://ikm-group.ch/archiMEO/emo
+# imports: http://ikm-group.ch/archiMEO/eo
+# imports: http://ikm-group.ch/archiMEO/top
+# imports: http://ikm-group.ch/archimeo/iso42010
+
+@prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
+@prefix mod: <http://ikm-group.ch/archiMEO/mod#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix emo: <http://ikm-group.ch/archiMEO/emo#> .
+@prefix eo: <http://ikm-group.ch/archiMEO/eo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfsplus: <http://topbraid.org/spin/rdfsplus#> .
+@prefix top: <http://ikm-group.ch/archiMEO/top#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mod:Customer_satisfaction  rdf:type archi:Driver ;  rdfs:label "Customer satisfaction" ;  rdfs:comment "id-5944cf6e-0041-4419-b9fc-bd2b1857eea4" ;.
+
+mod:And_junction_for_realizing_digital_intimacy_strategy  rdf:type archi:AndJunction ;  rdfs:label "And junction for realizing digital intimacy strategy" ;  rdfs:comment "id-ebfe5769-de73-40d3-b430-8c18a251eedf" ;.
+
+mod:SIM_INSURE  rdf:type archi:ApplicationComponent ;  rdfs:label "SIM-INSURE" ;  rdfs:comment "id-cf3c25a8-594f-422b-bad3-6fe8cad38783" ;.
+
+mod:Application_Hosting  rdf:type archi:TechnologyService ;  rdfs:label "Application Hosting" ;  rdfs:comment "id-b55717b0-9096-4651-96c7-2021eb4b85d0" ;.
+
+mod:Internet_Web_Server  rdf:type archi:SystemSoftware ;  rdfs:label "Internet Web Server" ;  rdfs:comment "id-39279341-8e4e-4cdc-8de2-553f53b67d56" ;.
+
+mod:Ruby_Application_Component  rdf:type archi:ApplicationComponent ;  rdfs:label "Ruby Application Component" ;  rdfs:comment "id-ca4d60e3-863c-4bec-bf64-06fb7348a0dd" ;.
+
+mod:Systems_should_be_customer_facing  rdf:type archi:Principle ;  rdfs:label "Systems should be customer facing" ;  rdfs:comment "id-f8325754-2af3-4726-a3ea-6afc1f65402f" ;.
+
+mod:Q_CLAIM  rdf:type archi:ApplicationComponent ;  rdfs:label "Q-CLAIM" ;  rdfs:comment "id-c13cac85-af1b-45ea-8e39-416b97018376" ;.
+
+mod:P_CONFIG  rdf:type archi:ApplicationComponent ;  rdfs:label "P-CONFIG" ;  rdfs:comment "id-aefaf9e3-f58a-457e-8e60-e57de31feb15" ;.
+
+mod:Market_Analysis  rdf:type archi:DataObject ;  rdfs:label "Market Analysis" ;  rdfs:comment "id-f54f7665-eb70-4f94-88e8-6d16d0d4cd82" ;.
+
+mod:Integrated_portfolio_and_claims_management  rdf:type archi:Assessment ;  rdfs:label "Integrated portfolio and claims management" ;  rdfs:comment "id-3ae0214d-a383-4cc4-b9f0-2a2300f115ab" ;.
+
+mod:Online_insurance_portfolio_and_claims_management  rdf:type archi:ApplicationComponent ;  rdfs:label "Online insurance portfolio and claims management" ;  rdfs:comment "id-4e794ce2-8f03-4c03-a138-238c1a861357" ;.
+
+mod:BRIMS  rdf:type archi:ApplicationComponent ;  rdfs:label "BRIMS" ;  rdfs:comment "id-9703c1c4-be71-437a-a567-bf1c74bcae84" ;.
+
+mod:Loss_of_customers  rdf:type archi:Assessment ;  rdfs:label "Loss of customers" ;  rdfs:comment "id-4fe2b267-d8ac-4e95-bd01-e0e88f1d239d" ;.
+
+mod:Claim_submission  rdf:type archi:ApplicationService ;  rdfs:label "Claim submission" ;  rdfs:comment "id-d12896e3-c53b-4dce-8f02-b6914475c1a0" ;.
+
+mod:ArchiSurance_Back_Office_Suite  rdf:type archi:ApplicationComponent ;  rdfs:label "ArchiSurance Back Office Suite" ;  rdfs:comment "id-21e55425-a01e-4f48-b0ad-c3db54be4e7d" ;.
+
+mod:Or_Junction_back_office_suite_servers_  rdf:type archi:OrJunction ;  rdfs:label "Or Junction (back office suite servers)" ;  rdfs:comment "id-bcc77f5f-9d9a-430f-a123-82afd79f9e6e" ;.
+
+mod:ArchiSurance_general_purpose_server_cluster  rdf:type archi:Device ;  rdfs:label "ArchiSurance general-purpose server cluster" ;  rdfs:comment "id-03602b14-e48f-476a-97b5-374c861f29eb" ;.
+
+mod:Application_Server  rdf:type archi:SystemSoftware ;  rdfs:label "Application Server" ;  rdfs:comment "id-360bcd06-e96a-4a59-b5fe-76be6b57470b" ;.
+
+mod:VERSA_CLAIM  rdf:type archi:ApplicationComponent ;  rdfs:label "VERSA-CLAIM" ;  rdfs:comment "id-ca260298-f91f-462c-a24d-de4c5d538e75" ;.
+
+mod:Candidate_Product_Configuration  rdf:type archi:DataObject ;  rdfs:label "Candidate Product Configuration" ;  rdfs:comment "id-273ee4d1-f349-43cd-84ec-d7dbe2ad9d21" ;.
+
+mod:Application_Component  rdf:type archi:ApplicationComponent ;  rdfs:label "Application Component" ;  rdfs:comment "id-0e19c5b6-ae79-4f16-bdea-129714e67a5c" ;.
+
+mod:Additional_personnel_cost_should_be_limited  rdf:type archi:Constraint ;  rdfs:label "Additional personnel cost should be limited" ;  rdfs:comment "id-45d39a48-b746-4b9e-a554-660b0cee2b68" ;.
+
+mod:Bank  rdf:type archi:BusinessRole ;  rdfs:label "Bank" ;  rdfs:comment "id-c1b2a44a-613b-45c1-aaa7-87f6a3442579" ;.
+
+mod:Collect_Premium  rdf:type archi:BusinessProcess ;  rdfs:label "Collect Premium" ;  rdfs:comment "id-e114eec2-647b-4771-a3d1-9845ce30ed9b" ;.
+
+mod:C_Application_Component  rdf:type archi:ApplicationComponent ;  rdfs:label "C++ Application Component" ;  rdfs:comment "id-2f26f861-4678-4513-8d2d-00b2f6dd3d34" ;.
+
+mod:Internet_Web_Hosting  rdf:type archi:TechnologyService ;  rdfs:label "Internet Web Hosting" ;  rdfs:comment "id-bf4cdfc9-e1b4-4e26-9dbf-2c79969827dd" ;.
+
+mod:Finance  rdf:type archi:BusinessFunction ;  rdfs:label "Finance" ;  rdfs:comment "id-1aff4d2a-ba65-41d6-828c-5aed2f80ba16" ;.
+
+mod:Customer_Care  rdf:type archi:Capability ;  rdfs:label "Customer Care" ;  rdfs:comment "id-bf221c57-ec02-4146-9fca-68bd8f0c3529" ;.
+
+mod:Market_Statistics  rdf:type archi:DataObject ;  rdfs:label "Market Statistics" ;  rdfs:comment "id-110826eb-924b-40dd-abcd-93969a945609" ;.
+
+mod:Web_front_end  rdf:type archi:ApplicationInterface ;  rdfs:label "Web front-end" ;  rdfs:comment "id-ea63863e-4ca7-4d08-b6e8-0e172ea1536f" ;.
+
+mod:ArchiSurance_back_up_server_cluster  rdf:type archi:Device ;  rdfs:label "ArchiSurance back-up server cluster" ;  rdfs:comment "id-24b46387-d33e-4722-8e76-bfc364683586" ;.
+
+mod:Receive_request  rdf:type archi:BusinessProcess ;  rdfs:label "Receive request" ;  rdfs:comment "id-30aef619-e00a-48cc-a7a7-e75c0332a8d5" ;.
+
+mod:Business_Analytics_Suite  rdf:type archi:ApplicationComponent ;  rdfs:label "Business Analytics Suite" ;  rdfs:comment "id-50f3a4c3-615f-47ed-9700-ecc78c023af1" ;.
+
+mod:Process_request  rdf:type archi:BusinessProcess ;  rdfs:label "Process request" ;  rdfs:comment "id-8ae97e4d-fd99-497d-988f-3074a46cb2ff" ;.
+
+mod:Single_point_of_access_for_all_insurance_products  rdf:type archi:Assessment ;  rdfs:label "Single point of access for all insurance products" ;  rdfs:comment "id-e18ae532-012c-4fc6-838a-26e4668c06cb" ;.
+
+mod:Content_Repository  rdf:type archi:TechnologyInterface ;  rdfs:label "Content Repository" ;  rdfs:comment "id-51fb7a13-b6b0-476a-b0ea-352aa2f6a174" ;.
+
+mod:Digital_customer_intimacy_strategy  rdf:type archi:CourseOfAction ;  rdfs:label "Digital customer intimacy strategy" ;  rdfs:comment "id-7bb1872b-d124-4782-a6c9-b11dfe902079" ;.
+
+mod:Enterprise_Data_Warehouse  rdf:type archi:DataObject ;  rdfs:label "Enterprise Data Warehouse" ;  rdfs:comment "id-25c87716-9cb8-4e33-88f6-f5deb7772a5c" ;.
+
+mod:Python_Application_Component  rdf:type archi:ApplicationComponent ;  rdfs:label "Python Application Component" ;  rdfs:comment "id-d83a8d75-d735-443d-b0df-d37343252b10" ;.
+
+mod:Application_Container  rdf:type archi:TechnologyInterface ;  rdfs:label "Application Container" ;  rdfs:comment "id-09e538f2-b9dc-4b6b-bfb9-d8a6bdc233d5" ;.
+
+mod:Provide_online_portfolio_and_claims_management  rdf:type archi:Requirement ;  rdfs:label "Provide online portfolio and claims management" ;  rdfs:comment "id-87e39a5b-3619-436b-8f6f-ef306220c42e" ;.
+
+mod:IT_Management  rdf:type archi:Capability ;  rdfs:label "IT Management" ;  rdfs:comment "id-98cf45dc-c86c-4417-82cc-e039e81d60cf" ;.
+
+mod:Candidate_Business_Rule_Set  rdf:type archi:DataObject ;  rdfs:label "Candidate Business Rule Set" ;  rdfs:comment "id-9264711c-190d-4bdb-a2ed-cc4e4a3db982" ;.
+
+mod:Claims  rdf:type archi:ApplicationCollaboration ;  rdfs:label "Claims" ;  rdfs:comment "id-c5b73e5f-d87b-4068-a7dc-40ccd7f66a57" ;.
+
+mod:Frequent_customer_complaints_copy_  rdf:type archi:Assessment ;  rdfs:label "Frequent customer complaints (copy)" ;  rdfs:comment "id-9f72a662-a18a-4a8d-810e-731e542c3d24" ;.
+
+mod:Product_Analysis  rdf:type archi:DataObject ;  rdfs:label "Product Analysis" ;  rdfs:comment "id-e9c708a0-7f68-40c9-bded-0ab3e693b8b1" ;.
+
+mod:Provide_personal_assistance_to_customer  rdf:type archi:Requirement ;  rdfs:label "Provide personal assistance to customer" ;  rdfs:comment "id-0b4ce862-c43e-4090-898b-edda6fde2fe3" ;.
+
+mod:ClaimsRealizationClaim_submission  rdf:type archi:Realization ;  rdfs:domain mod:Claims ;  rdfs:range mod:Claim_submission ;  rdfs:comment "id-2afa8c0b-d338-4f34-a2a2-06af2a9523ea" ;.
+
+mod:C_Application_ComponentSpecializationApplication_Component  rdf:type archi:Specialization ;  rdfs:domain mod:C_Application_Component ;  rdfs:range mod:Application_Component ;  rdfs:comment "id-c347b2f3-e01e-4e21-a658-31b7b82b59d0" ;.
+
+mod:Customer_satisfactionAssociationIntegrated_portfolio_and_claims_management  rdf:type archi:Association ;  rdfs:domain mod:Customer_satisfaction ;  rdfs:range mod:Integrated_portfolio_and_claims_management ;  rdfs:comment "id-1f0f32d6-9a02-4209-9285-c5ead2a44709" ;.
+
+mod:Application_ContainerAssignmentApplication_Hosting  rdf:type archi:Assignment ;  rdfs:domain mod:Application_Container ;  rdfs:range mod:Application_Hosting ;  rdfs:comment "id-4c5fca72-a363-4f8e-ac42-0218b47d29ba" ;.
+
+mod:Provide_online_portfolio_and_claims_managementInfluenceSystems_should_be_customer_facing  rdf:type archi:Influence ;  rdfs:domain mod:Provide_online_portfolio_and_claims_management ;  rdfs:range mod:Systems_should_be_customer_facing ;  rdfs:comment "id-0700d40e-1126-4b17-83f4-0e56e457a432" ;.
+
+mod:Python_Application_ComponentSpecializationApplication_Component  rdf:type archi:Specialization ;  rdfs:domain mod:Python_Application_Component ;  rdfs:range mod:Application_Component ;  rdfs:comment "id-60d13a9a-dfac-410c-819d-b12fd02c5a74" ;.
+
+mod:Customer_satisfactionAssociationFrequent_customer_complaints_copy_  rdf:type archi:Association ;  rdfs:domain mod:Customer_satisfaction ;  rdfs:range mod:Frequent_customer_complaints_copy_ ;  rdfs:comment "id-1be3ef7b-d668-4a65-a8de-c3668947abf3" ;.
+
+mod:Enterprise_Data_WarehouseCompositionMarket_Analysis  rdf:type archi:Composition ;  rdfs:domain mod:Enterprise_Data_Warehouse ;  rdfs:range mod:Market_Analysis ;  rdfs:comment "id-82b3b300-a1c2-4fe5-9390-f5a1a2e64e29" ;.
+
+mod:Application_ContainerServingQ_CLAIM  rdf:type archi:Serving ;  rdfs:domain mod:Application_Container ;  rdfs:range mod:Q_CLAIM ;  rdfs:comment "id-d098dfac-365f-42c2-9f99-6c36beb52d5a" ;.
+
+mod:BankFlowFinance  rdf:type archi:Flow ;  rdfs:domain mod:Bank ;  rdfs:range mod:Finance ;  rdfs:comment "id-2651482d-8dc2-4bfe-b657-5238a0ec56fa" ;.
+
+mod:Customer_satisfactionAssociationSingle_point_of_access_for_all_insurance_products  rdf:type archi:Association ;  rdfs:domain mod:Customer_satisfaction ;  rdfs:range mod:Single_point_of_access_for_all_insurance_products ;  rdfs:comment "id-820ddf17-a3e6-46bb-932a-51b606879296" ;.
+
+mod:Business_Analytics_SuiteAccessMarket_Analysis  rdf:type archi:Access ;  rdfs:domain mod:Business_Analytics_Suite ;  rdfs:range mod:Market_Analysis ;  rdfs:comment "id-10e58ea0-b506-4304-8d9a-cc0079c87ed0" ;.
+
+mod:ArchiSurance_general_purpose_server_clusterRealizationOr_Junction_back_office_suite_servers_  rdf:type archi:Realization ;  rdfs:domain mod:ArchiSurance_general_purpose_server_cluster ;  rdfs:range mod:Or_Junction_back_office_suite_servers_ ;  rdfs:comment "id-b0da554e-9dc0-402d-9f1d-b7230c324f9a" ;.
+
+mod:Business_Analytics_SuiteAccessEnterprise_Data_Warehouse  rdf:type archi:Access ;  rdfs:domain mod:Business_Analytics_Suite ;  rdfs:range mod:Enterprise_Data_Warehouse ;  rdfs:comment "id-57264180-0d9e-4826-ba7b-cf8cb3354c0c" ;.
+
+mod:Business_Analytics_SuiteAccessProduct_Analysis  rdf:type archi:Access ;  rdfs:domain mod:Business_Analytics_Suite ;  rdfs:range mod:Product_Analysis ;  rdfs:comment "id-05f367d2-9132-4b07-a44b-128b35a7dc48" ;.
+
+mod:SIM_INSUREAccessEnterprise_Data_Warehouse  rdf:type archi:Access ;  rdfs:domain mod:SIM_INSURE ;  rdfs:range mod:Enterprise_Data_Warehouse ;  rdfs:comment "id-7519a945-5090-407e-a93a-048bdd85ad59" ;.
+
+mod:Ruby_Application_ComponentSpecializationApplication_Component  rdf:type archi:Specialization ;  rdfs:domain mod:Ruby_Application_Component ;  rdfs:range mod:Application_Component ;  rdfs:comment "id-699156a4-903f-4012-b95e-7dd796ff3102" ;.
+
+mod:ClaimsAggregationOnline_insurance_portfolio_and_claims_management  rdf:type archi:Aggregation ;  rdfs:domain mod:Claims ;  rdfs:range mod:Online_insurance_portfolio_and_claims_management ;  rdfs:comment "id-6675ba10-0456-42ec-bc6d-945c1131ae28" ;.
+
+mod:Internet_Web_ServerRealizationInternet_Web_Hosting  rdf:type archi:Realization ;  rdfs:domain mod:Internet_Web_Server ;  rdfs:range mod:Internet_Web_Hosting ;  rdfs:comment "id-37753721-ed6e-46ff-9523-b76fbbcb030d" ;.
+
+mod:Provide_personal_assistance_to_customerInfluenceSystems_should_be_customer_facing  rdf:type archi:Influence ;  rdfs:domain mod:Provide_personal_assistance_to_customer ;  rdfs:range mod:Systems_should_be_customer_facing ;  rdfs:comment "id-8d37783a-801d-4266-880e-53f80874852d" ;.
+
+mod:Enterprise_Data_WarehouseCompositionProduct_Analysis  rdf:type archi:Composition ;  rdfs:domain mod:Enterprise_Data_Warehouse ;  rdfs:range mod:Product_Analysis ;  rdfs:comment "id-8e2a2f22-57bc-457f-b3f7-884855b10055" ;.
+
+mod:Provide_personal_assistance_to_customerInfluenceAdditional_personnel_cost_should_be_limited  rdf:type archi:Influence ;  rdfs:domain mod:Provide_personal_assistance_to_customer ;  rdfs:range mod:Additional_personnel_cost_should_be_limited ;  rdfs:comment "id-75d34643-856b-441e-b8c4-4d2056af84dd" ;.
+
+mod:BRIMSAccessCandidate_Business_Rule_Set  rdf:type archi:Access ;  rdfs:domain mod:BRIMS ;  rdfs:range mod:Candidate_Business_Rule_Set ;  rdfs:comment "id-774f0386-f3d6-4360-8c97-ff6c72c0531b" ;.
+
+mod:Customer_satisfactionAssociationLoss_of_customers  rdf:type archi:Association ;  rdfs:domain mod:Customer_satisfaction ;  rdfs:range mod:Loss_of_customers ;  rdfs:comment "id-9bf8711b-c5fa-4975-8261-71fe8b393c59" ;.
+
+mod:P_CONFIGAccessCandidate_Product_Configuration  rdf:type archi:Access ;  rdfs:domain mod:P_CONFIG ;  rdfs:range mod:Candidate_Product_Configuration ;  rdfs:comment "id-fb8ee4ac-4fae-4aa1-b068-ea8c6ffd39a1" ;.
+
+mod:Receive_requestTriggeringProcess_request  rdf:type archi:Triggering ;  rdfs:domain mod:Receive_request ;  rdfs:range mod:Process_request ;  rdfs:comment "id-17bd2c85-a257-4342-981d-e14e249abb4f" ;.
+
+mod:Enterprise_Data_WarehouseCompositionCandidate_Product_Configuration  rdf:type archi:Composition ;  rdfs:domain mod:Enterprise_Data_Warehouse ;  rdfs:range mod:Candidate_Product_Configuration ;  rdfs:comment "id-081723d0-711e-4196-93bd-7cca64dd086e" ;.
+
+mod:Enterprise_Data_WarehouseCompositionCandidate_Business_Rule_Set  rdf:type archi:Composition ;  rdfs:domain mod:Enterprise_Data_Warehouse ;  rdfs:range mod:Candidate_Business_Rule_Set ;  rdfs:comment "id-f0e1746b-eb47-4092-a009-b1166f8a1670" ;.
+
+mod:Process_requestTriggeringCollect_Premium  rdf:type archi:Triggering ;  rdfs:domain mod:Process_request ;  rdfs:range mod:Collect_Premium ;  rdfs:comment "id-612e4db7-60ba-4b73-981c-bde112e5936b" ;.
+
+mod:Customer_CareRealizationAnd_junction_for_realizing_digital_intimacy_strategy  rdf:type archi:Realization ;  rdfs:domain mod:Customer_Care ;  rdfs:range mod:And_junction_for_realizing_digital_intimacy_strategy ;  rdfs:comment "id-eefb26ee-ce26-459e-bd7c-a560fe40e2f7" ;.
+
+mod:ArchiSurance_back_up_server_clusterRealizationOr_Junction_back_office_suite_servers_  rdf:type archi:Realization ;  rdfs:domain mod:ArchiSurance_back_up_server_cluster ;  rdfs:range mod:Or_Junction_back_office_suite_servers_ ;  rdfs:comment "id-0e454e50-c5b3-4585-9ad5-0825a20234d6" ;.
+
+mod:Online_insurance_portfolio_and_claims_managementCompositionWeb_front_end  rdf:type archi:Composition ;  rdfs:domain mod:Online_insurance_portfolio_and_claims_management ;  rdfs:range mod:Web_front_end ;  rdfs:comment "id-1b314e3f-265a-4460-a179-434319382e61" ;.
+
+mod:Content_RepositoryServingQ_CLAIM  rdf:type archi:Serving ;  rdfs:domain mod:Content_Repository ;  rdfs:range mod:Q_CLAIM ;  rdfs:comment "id-f982fc34-4e5c-494d-ae81-bec8e6e228fb" ;.
+
+mod:Or_Junction_back_office_suite_servers_RealizationArchiSurance_Back_Office_Suite  rdf:type archi:Realization ;  rdfs:domain mod:Or_Junction_back_office_suite_servers_ ;  rdfs:range mod:ArchiSurance_Back_Office_Suite ;  rdfs:comment "id-f3b05e35-ef3b-4792-b145-95abfcb19556" ;.
+
+mod:ClaimsAggregationVERSA_CLAIM  rdf:type archi:Aggregation ;  rdfs:domain mod:Claims ;  rdfs:range mod:VERSA_CLAIM ;  rdfs:comment "id-f685d375-19b4-4264-ad15-5b7a229082c1" ;.
+
+mod:FinanceFlowBank  rdf:type archi:Flow ;  rdfs:domain mod:Finance ;  rdfs:range mod:Bank ;  rdfs:comment "id-4e040306-43fa-4108-84e2-830bcf9667aa" ;.
+
+mod:Content_RepositoryAssignmentInternet_Web_Hosting  rdf:type archi:Assignment ;  rdfs:domain mod:Content_Repository ;  rdfs:range mod:Internet_Web_Hosting ;  rdfs:comment "id-9fba7c02-a692-4270-9b06-ae4042114947" ;.
+
+mod:Application_ServerRealizationApplication_Hosting  rdf:type archi:Realization ;  rdfs:domain mod:Application_Server ;  rdfs:range mod:Application_Hosting ;  rdfs:comment "id-853a1fab-2732-400c-9710-1b1ed2fef680" ;.
+
+mod:IT_ManagementRealizationAnd_junction_for_realizing_digital_intimacy_strategy  rdf:type archi:Realization ;  rdfs:domain mod:IT_Management ;  rdfs:range mod:And_junction_for_realizing_digital_intimacy_strategy ;  rdfs:comment "id-0cf11826-78b0-4d7e-b22c-23c19187a7c0" ;.
+
+mod:Enterprise_Data_WarehouseCompositionMarket_Statistics  rdf:type archi:Composition ;  rdfs:domain mod:Enterprise_Data_Warehouse ;  rdfs:range mod:Market_Statistics ;  rdfs:comment "id-19795402-808b-4c9e-a48d-39661990d903" ;.
+
+mod:Provide_online_portfolio_and_claims_managementInfluenceAdditional_personnel_cost_should_be_limited  rdf:type archi:Influence ;  rdfs:domain mod:Provide_online_portfolio_and_claims_management ;  rdfs:range mod:Additional_personnel_cost_should_be_limited ;  rdfs:comment "id-a51eda84-b03e-4f1d-9a32-3430a1fd8ff9" ;.
+
+mod:And_junction_for_realizing_digital_intimacy_strategyRealizationDigital_customer_intimacy_strategy  rdf:type archi:Realization ;  rdfs:domain mod:And_junction_for_realizing_digital_intimacy_strategy ;  rdfs:range mod:Digital_customer_intimacy_strategy ;  rdfs:comment "id-23c9278b-bb5b-4123-950a-a892539535d6" ;.
+
+mod:Interoperability_testing_snippet_9  rdf:type archi:model ;  archi:hasModellingElement mod:Customer_satisfaction ;  archi:hasModellingElement mod:And_junction_for_realizing_digital_intimacy_strategy ;  archi:hasModellingElement mod:SIM_INSURE ;  archi:hasModellingElement mod:Application_Hosting ;  archi:hasModellingElement mod:Internet_Web_Server ;  archi:hasModellingElement mod:Ruby_Application_Component ;  archi:hasModellingElement mod:Systems_should_be_customer_facing ;  archi:hasModellingElement mod:Q_CLAIM ;  archi:hasModellingElement mod:P_CONFIG ;  archi:hasModellingElement mod:Market_Analysis ;  archi:hasModellingElement mod:Integrated_portfolio_and_claims_management ;  archi:hasModellingElement mod:Online_insurance_portfolio_and_claims_management ;  archi:hasModellingElement mod:BRIMS ;  archi:hasModellingElement mod:Loss_of_customers ;  archi:hasModellingElement mod:Claim_submission ;  archi:hasModellingElement mod:ArchiSurance_Back_Office_Suite ;  archi:hasModellingElement mod:Or_Junction_back_office_suite_servers_ ;  archi:hasModellingElement mod:ArchiSurance_general_purpose_server_cluster ;  archi:hasModellingElement mod:Application_Server ;  archi:hasModellingElement mod:VERSA_CLAIM ;  archi:hasModellingElement mod:Candidate_Product_Configuration ;  archi:hasModellingElement mod:Application_Component ;  archi:hasModellingElement mod:Additional_personnel_cost_should_be_limited ;  archi:hasModellingElement mod:Bank ;  archi:hasModellingElement mod:Collect_Premium ;  archi:hasModellingElement mod:C_Application_Component ;  archi:hasModellingElement mod:Internet_Web_Hosting ;  archi:hasModellingElement mod:Finance ;  archi:hasModellingElement mod:Customer_Care ;  archi:hasModellingElement mod:Market_Statistics ;  archi:hasModellingElement mod:Web_front_end ;  archi:hasModellingElement mod:ArchiSurance_back_up_server_cluster ;  archi:hasModellingElement mod:Receive_request ;  archi:hasModellingElement mod:Business_Analytics_Suite ;  archi:hasModellingElement mod:Process_request ;  archi:hasModellingElement mod:Single_point_of_access_for_all_insurance_products ;  archi:hasModellingElement mod:Content_Repository ;  archi:hasModellingElement mod:Digital_customer_intimacy_strategy ;  archi:hasModellingElement mod:Enterprise_Data_Warehouse ;  archi:hasModellingElement mod:Python_Application_Component ;  archi:hasModellingElement mod:Application_Container ;  archi:hasModellingElement mod:Provide_online_portfolio_and_claims_management ;  archi:hasModellingElement mod:IT_Management ;  archi:hasModellingElement mod:Candidate_Business_Rule_Set ;  archi:hasModellingElement mod:Claims ;  archi:hasModellingElement mod:Frequent_customer_complaints_copy_ ;  archi:hasModellingElement mod:Product_Analysis ;  archi:hasModellingElement mod:Provide_personal_assistance_to_customer ;  archi:hasModellingElement mod:ClaimsRealizationClaim_submission ;  archi:hasModellingElement mod:C_Application_ComponentSpecializationApplication_Component ;  archi:hasModellingElement mod:Customer_satisfactionAssociationIntegrated_portfolio_and_claims_management ;  archi:hasModellingElement mod:Application_ContainerAssignmentApplication_Hosting ;  archi:hasModellingElement mod:Provide_online_portfolio_and_claims_managementInfluenceSystems_should_be_customer_facing ;  archi:hasModellingElement mod:Python_Application_ComponentSpecializationApplication_Component ;  archi:hasModellingElement mod:Customer_satisfactionAssociationFrequent_customer_complaints_copy_ ;  archi:hasModellingElement mod:Enterprise_Data_WarehouseCompositionMarket_Analysis ;  archi:hasModellingElement mod:Application_ContainerServingQ_CLAIM ;  archi:hasModellingElement mod:BankFlowFinance ;  archi:hasModellingElement mod:Customer_satisfactionAssociationSingle_point_of_access_for_all_insurance_products ;  archi:hasModellingElement mod:Business_Analytics_SuiteAccessMarket_Analysis ;  archi:hasModellingElement mod:ArchiSurance_general_purpose_server_clusterRealizationOr_Junction_back_office_suite_servers_ ;  archi:hasModellingElement mod:Business_Analytics_SuiteAccessEnterprise_Data_Warehouse ;  archi:hasModellingElement mod:Business_Analytics_SuiteAccessProduct_Analysis ;  archi:hasModellingElement mod:SIM_INSUREAccessEnterprise_Data_Warehouse ;  archi:hasModellingElement mod:Ruby_Application_ComponentSpecializationApplication_Component ;  archi:hasModellingElement mod:ClaimsAggregationOnline_insurance_portfolio_and_claims_management ;  archi:hasModellingElement mod:Internet_Web_ServerRealizationInternet_Web_Hosting ;  archi:hasModellingElement mod:Provide_personal_assistance_to_customerInfluenceSystems_should_be_customer_facing ;  archi:hasModellingElement mod:Enterprise_Data_WarehouseCompositionProduct_Analysis ;  archi:hasModellingElement mod:Provide_personal_assistance_to_customerInfluenceAdditional_personnel_cost_should_be_limited ;  archi:hasModellingElement mod:BRIMSAccessCandidate_Business_Rule_Set ;  archi:hasModellingElement mod:Customer_satisfactionAssociationLoss_of_customers ;  archi:hasModellingElement mod:P_CONFIGAccessCandidate_Product_Configuration ;  archi:hasModellingElement mod:Receive_requestTriggeringProcess_request ;  archi:hasModellingElement mod:Enterprise_Data_WarehouseCompositionCandidate_Product_Configuration ;  archi:hasModellingElement mod:Enterprise_Data_WarehouseCompositionCandidate_Business_Rule_Set ;  archi:hasModellingElement mod:Process_requestTriggeringCollect_Premium ;  archi:hasModellingElement mod:Customer_CareRealizationAnd_junction_for_realizing_digital_intimacy_strategy ;  archi:hasModellingElement mod:ArchiSurance_back_up_server_clusterRealizationOr_Junction_back_office_suite_servers_ ;  archi:hasModellingElement mod:Online_insurance_portfolio_and_claims_managementCompositionWeb_front_end ;  archi:hasModellingElement mod:Content_RepositoryServingQ_CLAIM ;  archi:hasModellingElement mod:Or_Junction_back_office_suite_servers_RealizationArchiSurance_Back_Office_Suite ;  archi:hasModellingElement mod:ClaimsAggregationVERSA_CLAIM ;  archi:hasModellingElement mod:FinanceFlowBank ;  archi:hasModellingElement mod:Content_RepositoryAssignmentInternet_Web_Hosting ;  archi:hasModellingElement mod:Application_ServerRealizationApplication_Hosting ;  archi:hasModellingElement mod:IT_ManagementRealizationAnd_junction_for_realizing_digital_intimacy_strategy ;  archi:hasModellingElement mod:Enterprise_Data_WarehouseCompositionMarket_Statistics ;  archi:hasModellingElement mod:Provide_online_portfolio_and_claims_managementInfluenceAdditional_personnel_cost_should_be_limited ;  archi:hasModellingElement mod:And_junction_for_realizing_digital_intimacy_strategyRealizationDigital_customer_intimacy_strategy ;.

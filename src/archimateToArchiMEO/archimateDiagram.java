@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class archimateDiagram {
 
 	String raw="";
-	String name="";
+	public String name="";
 	HashMap<String,Elements> elements=new HashMap<String,Elements>();
 	HashMap<String,Relationships> relationships=new HashMap<String,Relationships>();
 

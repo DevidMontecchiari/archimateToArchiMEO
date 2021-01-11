@@ -1,0 +1,142 @@
+# baseURI: http://ikm-group.ch/archiMEO/archimate
+# imports: http://ikm-group.ch/archiMEO/emo
+# imports: http://ikm-group.ch/archiMEO/eo
+# imports: http://ikm-group.ch/archiMEO/top
+# imports: http://ikm-group.ch/archimeo/iso42010
+
+@prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
+@prefix mod: <http://ikm-group.ch/archiMEO/mod#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix emo: <http://ikm-group.ch/archiMEO/emo#> .
+@prefix eo: <http://ikm-group.ch/archiMEO/eo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfsplus: <http://topbraid.org/spin/rdfsplus#> .
+@prefix top: <http://ikm-group.ch/archiMEO/top#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mod:Medical_insurance_seller  rdf:type archi:BusinessRole ;  rdfs:label "Medical insurance seller" ;  rdfs:comment "id-f7d94886-8bec-4b2d-abdb-b2402cf892a8" ;.
+
+mod:Receive_request  rdf:type archi:BusinessProcess ;  rdfs:label "Receive request" ;  rdfs:comment "id-5065a006-6b92-421f-a2b7-f172bf2bd861" ;.
+
+mod:Take_out_travel_insurance  rdf:type archi:BusinessProcess ;  rdfs:label "Take out travel insurance" ;  rdfs:comment "id-dee3af79-9646-423d-a7f9-6ec56256c7ef" ;.
+
+mod:Customer_insurance_retrieval  rdf:type archi:BusinessService ;  rdfs:label "Customer insurance retrieval" ;  rdfs:comment "id-3b4f2afb-965a-4f10-883f-aa483abaf2e5" ;.
+
+mod:Web_form  rdf:type archi:BusinessInterface ;  rdfs:label "Web form" ;  rdfs:comment "id-286d2c61-3749-468c-a5f3-f65a5b652c62" ;.
+
+mod:Insurance_seller  rdf:type archi:BusinessRole ;  rdfs:label "Insurance seller" ;  rdfs:comment "id-8a642528-990a-4d5b-b4c5-7e240a83c21f" ;.
+
+mod:Luggage_insurance_seller  rdf:type archi:BusinessRole ;  rdfs:label "Luggage insurance seller" ;  rdfs:comment "id-12972213-d5e0-4afc-80ec-e82dc1b25571" ;.
+
+mod:Customer_information  rdf:type archi:BusinessObject ;  rdfs:label "Customer information" ;  rdfs:comment "id-bf6fe7b8-3fbe-4e7c-93d9-a6c98d41e910" ;.
+
+mod:Travel_insurance_selling  rdf:type archi:BusinessService ;  rdfs:label "Travel insurance selling" ;  rdfs:comment "id-48c6a20d-c7aa-4aec-9c11-34f0bd8ba459" ;.
+
+mod:Insurance_selling  rdf:type archi:BusinessService ;  rdfs:label "Insurance selling" ;  rdfs:comment "id-39193bbc-b643-4efd-a819-76bc4cc1fa5a" ;.
+
+mod:Customer_info_processing  rdf:type archi:BusinessService ;  rdfs:label "Customer info processing" ;  rdfs:comment "id-50593649-e9b7-4407-ab9e-0920c6242a1e" ;.
+
+mod:Process_request  rdf:type archi:BusinessProcess ;  rdfs:label "Process request" ;  rdfs:comment "id-13694be0-ffd4-4464-bada-7dd427739ddd" ;.
+
+mod:Sales_Support  rdf:type archi:BusinessRole ;  rdfs:label "Sales Support" ;  rdfs:comment "id-fea81f9f-3834-42cb-91c9-6dcfa44fc396" ;.
+
+mod:Premium_collection  rdf:type archi:BusinessService ;  rdfs:label "Premium collection" ;  rdfs:comment "id-dfe96dd5-2fe8-4c43-8824-5d9c61f9f03d" ;.
+
+mod:Sales_department  rdf:type archi:BusinessActor ;  rdfs:label "Sales department" ;  rdfs:comment "id-ec5d46ae-b161-4695-af34-e5a54eef2d0f" ;.
+
+mod:Submit_claim  rdf:type archi:BusinessProcess ;  rdfs:label "Submit claim" ;  rdfs:comment "id-295d8c8b-d049-4fce-aec7-110c8334aa95" ;.
+
+mod:Luggage_insurance_selling  rdf:type archi:BusinessService ;  rdfs:label "Luggage insurance selling" ;  rdfs:comment "id-ce4fa72f-2253-4596-a10a-5ae8fb812ffd" ;.
+
+mod:Take_out_luggage_insurance  rdf:type archi:BusinessProcess ;  rdfs:label "Take out luggage insurance" ;  rdfs:comment "id-24dc08d6-f1b0-447f-afb6-ee1862be75bf" ;.
+
+mod:Luggage_insurance_sales  rdf:type archi:BusinessCollaboration ;  rdfs:label "Luggage insurance sales" ;  rdfs:comment "id-76397957-c80a-47c7-bdb5-d5e13b546f13" ;.
+
+mod:Medical_insurance_department  rdf:type archi:BusinessActor ;  rdfs:label "Medical insurance department" ;  rdfs:comment "id-b1eca5b3-2db9-4e1b-b3f4-3bf2a5841eb8" ;.
+
+mod:Basic_administration  rdf:type archi:BusinessFunction ;  rdfs:label "Basic administration" ;  rdfs:comment "id-84566c63-425c-4091-b771-7c4190be398a" ;.
+
+mod:Financial_handling  rdf:type archi:BusinessFunction ;  rdfs:label "Financial handling" ;  rdfs:comment "id-2a5cce06-939d-4fda-a496-136c0263154a" ;.
+
+mod:Insurance_buyer  rdf:type archi:BusinessRole ;  rdfs:label "Insurance buyer" ;  rdfs:comment "id-cad3ad9e-9124-47a0-a0b2-eb9f676eca6a" ;.
+
+mod:Luggage_insurance_department  rdf:type archi:BusinessActor ;  rdfs:label "Luggage insurance department" ;  rdfs:comment "id-415af5c2-eb00-4685-a070-c60f084a0ba7" ;.
+
+mod:Medical_insurance_sales  rdf:type archi:BusinessCollaboration ;  rdfs:label "Medical insurance sales" ;  rdfs:comment "id-73adedbe-2274-4df8-8785-1c1559173445" ;.
+
+mod:Customer_handling  rdf:type archi:BusinessFunction ;  rdfs:label "Customer handling" ;  rdfs:comment "id-2e597388-29de-43d4-a670-d3337b572e68" ;.
+
+mod:Insurer  rdf:type archi:BusinessRole ;  rdfs:label "Insurer" ;  rdfs:comment "id-63b4c4bd-33a8-405e-8ba6-c36762c9b90c" ;.
+
+mod:Collect_Premium  rdf:type archi:BusinessProcess ;  rdfs:label "Collect Premium" ;  rdfs:comment "id-b933f81b-353c-4fa6-b476-5eb2b081c501" ;.
+
+mod:Customer_insurance_retrievalServingTake_out_luggage_insurance  rdf:type archi:Serving ;  rdfs:domain mod:Customer_insurance_retrieval ;  rdfs:range mod:Take_out_luggage_insurance ;  rdfs:comment "id-0658d1ec-7e29-4ff4-b17d-465ccfe81449" ;.
+
+mod:Take_out_luggage_insuranceRealizationLuggage_insurance_selling  rdf:type archi:Realization ;  rdfs:domain mod:Take_out_luggage_insurance ;  rdfs:range mod:Luggage_insurance_selling ;  rdfs:comment "id-79bcc850-039a-4c7d-81c1-5335afcec771" ;.
+
+mod:Medical_insurance_salesAggregationSales_Support  rdf:type archi:Aggregation ;  rdfs:domain mod:Medical_insurance_sales ;  rdfs:range mod:Sales_Support ;  rdfs:comment "id-3b78be7c-1969-4cb2-8497-f4e4e6f50007" ;.
+
+mod:Insurance_sellerCompositionWeb_form  rdf:type archi:Composition ;  rdfs:domain mod:Insurance_seller ;  rdfs:range mod:Web_form ;  rdfs:comment "id-5a3cc17e-32b2-4b65-937c-6cc7661c0f89" ;.
+
+mod:Web_formAssignmentInsurance_selling  rdf:type archi:Assignment ;  rdfs:domain mod:Web_form ;  rdfs:range mod:Insurance_selling ;  rdfs:comment "id-798d4e5b-ff03-43bc-aef0-9f9ff2ea0f99" ;.
+
+mod:Customer_info_processingServingTake_out_travel_insurance  rdf:type archi:Serving ;  rdfs:domain mod:Customer_info_processing ;  rdfs:range mod:Take_out_travel_insurance ;  rdfs:comment "id-a2d87b0e-e21a-4cf5-966b-7405aae15861" ;.
+
+mod:Sales_departmentAssignmentSales_Support  rdf:type archi:Assignment ;  rdfs:domain mod:Sales_department ;  rdfs:range mod:Sales_Support ;  rdfs:comment "id-1177672b-0ce7-4efc-8373-a5645742a47a" ;.
+
+mod:Medical_insurance_departmentAssignmentMedical_insurance_seller  rdf:type archi:Assignment ;  rdfs:domain mod:Medical_insurance_department ;  rdfs:range mod:Medical_insurance_seller ;  rdfs:comment "id-19e17139-4696-418e-b9c4-a2e7e3445bb0" ;.
+
+mod:Medical_insurance_salesAggregationMedical_insurance_seller  rdf:type archi:Aggregation ;  rdfs:domain mod:Medical_insurance_sales ;  rdfs:range mod:Medical_insurance_seller ;  rdfs:comment "id-c9dcc911-00e8-4ea7-a8ab-e9b664e41dc6" ;.
+
+mod:Take_out_travel_insuranceRealizationTravel_insurance_selling  rdf:type archi:Realization ;  rdfs:domain mod:Take_out_travel_insurance ;  rdfs:range mod:Travel_insurance_selling ;  rdfs:comment "id-5a9a2ce9-f103-43e9-805c-02cc9a587247" ;.
+
+mod:Customer_handlingCompositionReceive_request  rdf:type archi:Composition ;  rdfs:domain mod:Customer_handling ;  rdfs:range mod:Receive_request ;  rdfs:comment "id-8755a111-ac99-4e3c-add4-68ef5c530f93" ;.
+
+mod:Basic_administrationRealizationCustomer_insurance_retrieval  rdf:type archi:Realization ;  rdfs:domain mod:Basic_administration ;  rdfs:range mod:Customer_insurance_retrieval ;  rdfs:comment "id-43bd7394-7466-4159-8e65-ad5631b1e6bb" ;.
+
+mod:Financial_handlingCompositionCollect_Premium  rdf:type archi:Composition ;  rdfs:domain mod:Financial_handling ;  rdfs:range mod:Collect_Premium ;  rdfs:comment "id-40a15135-5b76-42f5-85de-22dfb0eec7f9" ;.
+
+mod:Customer_handlingCompositionSubmit_claim  rdf:type archi:Composition ;  rdfs:domain mod:Customer_handling ;  rdfs:range mod:Submit_claim ;  rdfs:comment "id-4ac50fa2-cc41-4b1a-80cb-ae29efa80710" ;.
+
+mod:Receive_requestTriggeringProcess_request  rdf:type archi:Triggering ;  rdfs:domain mod:Receive_request ;  rdfs:range mod:Process_request ;  rdfs:comment "id-ac04c263-e1aa-4f1f-b7d5-b7e09062dcf1" ;.
+
+mod:InsurerAssignmentBasic_administration  rdf:type archi:Assignment ;  rdfs:domain mod:Insurer ;  rdfs:range mod:Basic_administration ;  rdfs:comment "id-e6ba1b89-e7ad-4ac4-a279-febf1fc3f8b2" ;.
+
+mod:Basic_administrationRealizationCustomer_info_processing  rdf:type archi:Realization ;  rdfs:domain mod:Basic_administration ;  rdfs:range mod:Customer_info_processing ;  rdfs:comment "id-d5e153e8-6fc4-4fb1-83e4-35dd7dba063f" ;.
+
+mod:Luggage_insurance_salesAggregationLuggage_insurance_seller  rdf:type archi:Aggregation ;  rdfs:domain mod:Luggage_insurance_sales ;  rdfs:range mod:Luggage_insurance_seller ;  rdfs:comment "id-b0729c5d-266c-4925-81c7-73db2ba58f92" ;.
+
+mod:Insurance_sellingCompositionLuggage_insurance_selling  rdf:type archi:Composition ;  rdfs:domain mod:Insurance_selling ;  rdfs:range mod:Luggage_insurance_selling ;  rdfs:comment "id-0d544540-9d11-4720-9bcf-b90284986714" ;.
+
+mod:Customer_handlingAccessCustomer_information  rdf:type archi:Access ;  rdfs:domain mod:Customer_handling ;  rdfs:range mod:Customer_information ;  rdfs:comment "id-a8535e37-bf81-4241-a6db-2b59ccc02a39" ;.
+
+mod:Basic_administrationCompositionProcess_request  rdf:type archi:Composition ;  rdfs:domain mod:Basic_administration ;  rdfs:range mod:Process_request ;  rdfs:comment "id-f93a892c-baf2-48a9-bac3-b95ec8c70558" ;.
+
+mod:InsurerAssignmentCustomer_handling  rdf:type archi:Assignment ;  rdfs:domain mod:Insurer ;  rdfs:range mod:Customer_handling ;  rdfs:comment "id-f65465b0-0275-4d5a-acde-9bcce2dd51d6" ;.
+
+mod:Customer_info_processingServingTake_out_luggage_insurance  rdf:type archi:Serving ;  rdfs:domain mod:Customer_info_processing ;  rdfs:range mod:Take_out_luggage_insurance ;  rdfs:comment "id-bfd44e06-3c08-4b4c-849d-1cb84353f4cf" ;.
+
+mod:Luggage_insurance_salesAggregationSales_Support  rdf:type archi:Aggregation ;  rdfs:domain mod:Luggage_insurance_sales ;  rdfs:range mod:Sales_Support ;  rdfs:comment "id-b4e2ae16-80af-4c47-b195-5879ab71c5bb" ;.
+
+mod:Luggage_insurance_departmentAssignmentLuggage_insurance_seller  rdf:type archi:Assignment ;  rdfs:domain mod:Luggage_insurance_department ;  rdfs:range mod:Luggage_insurance_seller ;  rdfs:comment "id-bd14b909-95ca-4f3e-8eca-40f5dbba38b8" ;.
+
+mod:Customer_insurance_retrievalServingTake_out_travel_insurance  rdf:type archi:Serving ;  rdfs:domain mod:Customer_insurance_retrieval ;  rdfs:range mod:Take_out_travel_insurance ;  rdfs:comment "id-57566de4-5bde-4405-898a-739ed97f2e7c" ;.
+
+mod:Process_requestTriggeringCollect_Premium  rdf:type archi:Triggering ;  rdfs:domain mod:Process_request ;  rdfs:range mod:Collect_Premium ;  rdfs:comment "id-15724502-38f4-48df-9197-5e19e3beab32" ;.
+
+mod:Insurance_sellingServingInsurance_buyer  rdf:type archi:Serving ;  rdfs:domain mod:Insurance_selling ;  rdfs:range mod:Insurance_buyer ;  rdfs:comment "id-7fd56af2-c183-4f29-8db7-2962cbfae1c7" ;.
+
+mod:Insurance_sellerAssignmentTake_out_travel_insurance  rdf:type archi:Assignment ;  rdfs:domain mod:Insurance_seller ;  rdfs:range mod:Take_out_travel_insurance ;  rdfs:comment "id-2ddda6bd-6df4-494b-bb15-e2b29502a61a" ;.
+
+mod:Collect_PremiumRealizationPremium_collection  rdf:type archi:Realization ;  rdfs:domain mod:Collect_Premium ;  rdfs:range mod:Premium_collection ;  rdfs:comment "id-9720f49d-cfb5-4330-967e-b65287ebc3e6" ;.
+
+mod:Insurance_sellerAssignmentTake_out_luggage_insurance  rdf:type archi:Assignment ;  rdfs:domain mod:Insurance_seller ;  rdfs:range mod:Take_out_luggage_insurance ;  rdfs:comment "id-12fe5d58-c3a4-4186-8c3c-5b61bddcb26d" ;.
+
+mod:Insurance_sellingCompositionTravel_insurance_selling  rdf:type archi:Composition ;  rdfs:domain mod:Insurance_selling ;  rdfs:range mod:Travel_insurance_selling ;  rdfs:comment "id-8331c82e-2060-41f1-b40b-f05c8cc2192e" ;.
+
+mod:InsurerAssignmentFinancial_handling  rdf:type archi:Assignment ;  rdfs:domain mod:Insurer ;  rdfs:range mod:Financial_handling ;  rdfs:comment "id-a59c63a9-cdf0-44e0-8360-ef08e7abfda5" ;.
+
+mod:Interoperability_testing_snippet_4  rdf:type archi:model ;  archi:hasModellingElement mod:Medical_insurance_seller ;  archi:hasModellingElement mod:Receive_request ;  archi:hasModellingElement mod:Take_out_travel_insurance ;  archi:hasModellingElement mod:Customer_insurance_retrieval ;  archi:hasModellingElement mod:Web_form ;  archi:hasModellingElement mod:Insurance_seller ;  archi:hasModellingElement mod:Luggage_insurance_seller ;  archi:hasModellingElement mod:Customer_information ;  archi:hasModellingElement mod:Travel_insurance_selling ;  archi:hasModellingElement mod:Insurance_selling ;  archi:hasModellingElement mod:Customer_info_processing ;  archi:hasModellingElement mod:Process_request ;  archi:hasModellingElement mod:Sales_Support ;  archi:hasModellingElement mod:Premium_collection ;  archi:hasModellingElement mod:Sales_department ;  archi:hasModellingElement mod:Submit_claim ;  archi:hasModellingElement mod:Luggage_insurance_selling ;  archi:hasModellingElement mod:Take_out_luggage_insurance ;  archi:hasModellingElement mod:Luggage_insurance_sales ;  archi:hasModellingElement mod:Medical_insurance_department ;  archi:hasModellingElement mod:Basic_administration ;  archi:hasModellingElement mod:Financial_handling ;  archi:hasModellingElement mod:Insurance_buyer ;  archi:hasModellingElement mod:Luggage_insurance_department ;  archi:hasModellingElement mod:Medical_insurance_sales ;  archi:hasModellingElement mod:Customer_handling ;  archi:hasModellingElement mod:Insurer ;  archi:hasModellingElement mod:Collect_Premium ;  archi:hasModellingElement mod:Customer_insurance_retrievalServingTake_out_luggage_insurance ;  archi:hasModellingElement mod:Take_out_luggage_insuranceRealizationLuggage_insurance_selling ;  archi:hasModellingElement mod:Medical_insurance_salesAggregationSales_Support ;  archi:hasModellingElement mod:Insurance_sellerCompositionWeb_form ;  archi:hasModellingElement mod:Web_formAssignmentInsurance_selling ;  archi:hasModellingElement mod:Customer_info_processingServingTake_out_travel_insurance ;  archi:hasModellingElement mod:Sales_departmentAssignmentSales_Support ;  archi:hasModellingElement mod:Medical_insurance_departmentAssignmentMedical_insurance_seller ;  archi:hasModellingElement mod:Medical_insurance_salesAggregationMedical_insurance_seller ;  archi:hasModellingElement mod:Take_out_travel_insuranceRealizationTravel_insurance_selling ;  archi:hasModellingElement mod:Customer_handlingCompositionReceive_request ;  archi:hasModellingElement mod:Basic_administrationRealizationCustomer_insurance_retrieval ;  archi:hasModellingElement mod:Financial_handlingCompositionCollect_Premium ;  archi:hasModellingElement mod:Customer_handlingCompositionSubmit_claim ;  archi:hasModellingElement mod:Receive_requestTriggeringProcess_request ;  archi:hasModellingElement mod:InsurerAssignmentBasic_administration ;  archi:hasModellingElement mod:Basic_administrationRealizationCustomer_info_processing ;  archi:hasModellingElement mod:Luggage_insurance_salesAggregationLuggage_insurance_seller ;  archi:hasModellingElement mod:Insurance_sellingCompositionLuggage_insurance_selling ;  archi:hasModellingElement mod:Customer_handlingAccessCustomer_information ;  archi:hasModellingElement mod:Basic_administrationCompositionProcess_request ;  archi:hasModellingElement mod:InsurerAssignmentCustomer_handling ;  archi:hasModellingElement mod:Customer_info_processingServingTake_out_luggage_insurance ;  archi:hasModellingElement mod:Luggage_insurance_salesAggregationSales_Support ;  archi:hasModellingElement mod:Luggage_insurance_departmentAssignmentLuggage_insurance_seller ;  archi:hasModellingElement mod:Customer_insurance_retrievalServingTake_out_travel_insurance ;  archi:hasModellingElement mod:Process_requestTriggeringCollect_Premium ;  archi:hasModellingElement mod:Insurance_sellingServingInsurance_buyer ;  archi:hasModellingElement mod:Insurance_sellerAssignmentTake_out_travel_insurance ;  archi:hasModellingElement mod:Collect_PremiumRealizationPremium_collection ;  archi:hasModellingElement mod:Insurance_sellerAssignmentTake_out_luggage_insurance ;  archi:hasModellingElement mod:Insurance_sellingCompositionTravel_insurance_selling ;  archi:hasModellingElement mod:InsurerAssignmentFinancial_handling ;.

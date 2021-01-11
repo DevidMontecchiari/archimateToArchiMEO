@@ -12,7 +12,7 @@ import ontologyManager.Operation;
 public class Mapper {
 
 	Operation ontology;
-	archimateDiagram diagram;
+	public archimateDiagram diagram;
 	public Operation getOntology() {
 		return ontology;
 	}
@@ -41,7 +41,7 @@ public class Mapper {
 		for (Map.Entry<String, Elements> item : elements.entrySet()) {
 			String key = item.getKey();
 			Elements elem = item.getValue();
-			//			System.out.print(elem.toString()+"\n");
+//			System.out.print(elem.toString()+"\n");
 
 			if(this.ontology.archimate.containsKey("archi:"+elem.getXsiType())){
 				//				System.out.print(elem.getXsiType()+"\n");
@@ -72,7 +72,7 @@ public class Mapper {
 		for (Map.Entry<String, Relationships> item : relationships.entrySet()) {
 			String key = item.getKey();
 			Relationships rel = item.getValue();
-			//System.out.print(rel.toString()+"\n");
+//			System.out.print(rel.toString()+"\n");
 			
 			if(this.ontology.archimate.containsKey("archi:"+rel.getXsiType())){
 
@@ -99,6 +99,9 @@ public class Mapper {
 				String instanceName="mod:"+validateRDFid(validateRDFid(domainName)+rel.getXsiType()+validateRDFid(rangeName));
 				OntologyInstance c= new OntologyInstance(instanceName, types, attributes);
 
+				/*
+				 * TODO: ADD influence modifier as archi:InfluenceSignOrStrenght based on e.g., {++, +, 0, -, --} or [0..10]. Default unspecified.
+				 */
 				this.ontology.diagram.put(c.getName(), c);
 
 				rdf+=c.toRDF()+"\n";

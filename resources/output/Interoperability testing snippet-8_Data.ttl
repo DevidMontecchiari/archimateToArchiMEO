@@ -1,0 +1,134 @@
+# baseURI: http://ikm-group.ch/archiMEO/archimate
+# imports: http://ikm-group.ch/archiMEO/emo
+# imports: http://ikm-group.ch/archiMEO/eo
+# imports: http://ikm-group.ch/archiMEO/top
+# imports: http://ikm-group.ch/archimeo/iso42010
+
+@prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
+@prefix mod: <http://ikm-group.ch/archiMEO/mod#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix emo: <http://ikm-group.ch/archiMEO/emo#> .
+@prefix eo: <http://ikm-group.ch/archiMEO/eo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfsplus: <http://topbraid.org/spin/rdfsplus#> .
+@prefix top: <http://ikm-group.ch/archiMEO/top#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mod:Finance  rdf:type archi:BusinessFunction ;  rdfs:label "Finance" ;  rdfs:comment "id-a01537ee-3fee-4bdb-b855-1df38ca5f50a" ;.
+
+mod:AUTO_U  rdf:type archi:ApplicationComponent ;  rdfs:label "AUTO-U" ;  rdfs:comment "id-5b59acb2-b28c-4975-97d2-bf97fb666fb5" ;.
+
+mod:Actuarial  rdf:type archi:BusinessFunction ;  rdfs:label "Actuarial" ;  rdfs:comment "id-09b79f57-a6fa-40e5-9bec-9cd4508c97e4" ;.
+
+mod:Billing_service  rdf:type archi:ApplicationService ;  rdfs:label "Billing service" ;  rdfs:comment "id-277046df-1c7c-4a0a-b466-8c89d3854efe" ;.
+
+mod:Message_Queuing  rdf:type archi:SystemSoftware ;  rdfs:label "Message Queuing" ;  rdfs:comment "id-d7b0e573-4bbd-4303-ab2d-fe32501d1b41" ;.
+
+mod:Billing_data  rdf:type archi:DataObject ;  rdfs:label "Billing data" ;  rdfs:comment "id-97f82bd5-839f-40d2-ba8e-459176835080" ;.
+
+mod:ArchiSurance_back_up_server_cluster  rdf:type archi:Device ;  rdfs:label "ArchiSurance back-up server cluster" ;  rdfs:comment "id-607e2b03-72a9-4c0d-93fe-102b34b90697" ;.
+
+mod:Messaging_service  rdf:type archi:TechnologyService ;  rdfs:label "Messaging service" ;  rdfs:comment "id-1ba7610b-2a21-4aaf-921b-831206719dde" ;.
+
+mod:Legal_aid_back_office_system  rdf:type archi:ApplicationComponent ;  rdfs:label "Legal aid back-office system" ;  rdfs:comment "id-11b9dd26-f668-47d0-a899-bc7118353565" ;.
+
+mod:Underwriting  rdf:type archi:BusinessFunction ;  rdfs:label "Underwriting" ;  rdfs:comment "id-d8235581-aefc-404a-92f6-bcfc12e0568f" ;.
+
+mod:Financial_application  rdf:type archi:ApplicationComponent ;  rdfs:label "Financial application" ;  rdfs:comment "id-434a8c1e-dfdc-494f-964d-b3daa25c1a71" ;.
+
+mod:DBMS  rdf:type archi:SystemSoftware ;  rdfs:label "DBMS" ;  rdfs:comment "id-dfe19cf4-7f8b-49ae-bcf1-2c8035db14d1" ;.
+
+mod:ArchiSurance_Back_Office_Suite  rdf:type archi:ApplicationComponent ;  rdfs:label "ArchiSurance Back Office Suite" ;  rdfs:comment "id-8a8ad244-8bc4-4db7-bbf6-49612b3e0f46" ;.
+
+mod:Home_amp_Away_Financial_Application  rdf:type archi:ApplicationComponent ;  rdfs:label "Home &amp; Away Financial Application" ;  rdfs:comment "id-773ce578-d6b0-414f-99f8-251fd5dbf371" ;.
+
+mod:Mainframe  rdf:type archi:Node ;  rdfs:label "Mainframe" ;  rdfs:comment "id-f609c827-d114-4725-af78-8960cb176b0f" ;.
+
+mod:Send_invoice  rdf:type archi:BusinessProcess ;  rdfs:label "Send invoice" ;  rdfs:comment "id-86a890a9-e5a4-4ae7-8f01-ba15f990606b" ;.
+
+mod:VERSA_CLAIM  rdf:type archi:ApplicationComponent ;  rdfs:label "VERSA-CLAIM" ;  rdfs:comment "id-17a9fedc-5288-45d6-8338-eeae8a11f4a9" ;.
+
+mod:Or_Junction_back_office_suite_servers_  rdf:type archi:OrJunction ;  rdfs:label "Or Junction (back office suite servers)" ;  rdfs:comment "id-d390e7b2-6816-4687-933f-383c111b8a91" ;.
+
+mod:P_ADMIN  rdf:type archi:ApplicationComponent ;  rdfs:label "P-ADMIN" ;  rdfs:comment "id-ef9f722f-add3-4c87-a21f-48019d7d8a02" ;.
+
+mod:ArchiSurance_general_purpose_server_cluster  rdf:type archi:Device ;  rdfs:label "ArchiSurance general-purpose server cluster" ;  rdfs:comment "id-df74b0ca-ecb6-409b-abc2-e4607dfeddd3" ;.
+
+mod:Car_insurance_application  rdf:type archi:ApplicationComponent ;  rdfs:label "Car insurance application" ;  rdfs:comment "id-e34a7663-977e-4093-a5ab-9447333c4b13" ;.
+
+mod:Claims  rdf:type archi:BusinessFunction ;  rdfs:label "Claims" ;  rdfs:comment "id-7460820e-c4d7-44f5-b91f-84bd98d03f71" ;.
+
+mod:Back_Office  rdf:type archi:BusinessActor ;  rdfs:label "Back Office" ;  rdfs:comment "id-af27dde5-26a8-494d-ba2f-59dd83ceebf0" ;.
+
+mod:Home_amp_Away_Policy_Administration  rdf:type archi:ApplicationComponent ;  rdfs:label "Home &amp; Away Policy Administration" ;  rdfs:comment "id-1eca5b84-9695-4c04-ac33-525e4e1cfc56" ;.
+
+mod:Data_access_service  rdf:type archi:TechnologyService ;  rdfs:label "Data access service" ;  rdfs:comment "id-a6c7c384-78bb-46ff-a7bb-c473085f0315" ;.
+
+mod:Invoice  rdf:type archi:BusinessObject ;  rdfs:label "Invoice" ;  rdfs:comment "id-0f71d732-7c98-42d8-9061-ce9ecebf2513" ;.
+
+mod:Data_access_serviceServingHome_amp_Away_Policy_Administration  rdf:type archi:Serving ;  rdfs:domain mod:Data_access_service ;  rdfs:range mod:Home_amp_Away_Policy_Administration ;  rdfs:comment "id-6b69b2a8-26fd-4817-9240-420c2d0d1fbf" ;.
+
+mod:Messaging_serviceServingHome_amp_Away_Policy_Administration  rdf:type archi:Serving ;  rdfs:domain mod:Messaging_service ;  rdfs:range mod:Home_amp_Away_Policy_Administration ;  rdfs:comment "id-842ae872-5646-4256-b913-78fd574d40c6" ;.
+
+mod:Billing_serviceServingSend_invoice  rdf:type archi:Serving ;  rdfs:domain mod:Billing_service ;  rdfs:range mod:Send_invoice ;  rdfs:comment "id-1ede9e25-ae17-430e-9059-385d50895d2e" ;.
+
+mod:P_ADMINServingFinance  rdf:type archi:Serving ;  rdfs:domain mod:P_ADMIN ;  rdfs:range mod:Finance ;  rdfs:comment "id-2b8f9e4c-81e9-457e-85c3-40a7df2c414c" ;.
+
+mod:MainframeCompositionMessage_Queuing  rdf:type archi:Composition ;  rdfs:domain mod:Mainframe ;  rdfs:range mod:Message_Queuing ;  rdfs:comment "id-529a5bd2-908a-4f8c-b810-3ee271ffb86f" ;.
+
+mod:Message_QueuingRealizationMessaging_service  rdf:type archi:Realization ;  rdfs:domain mod:Message_Queuing ;  rdfs:range mod:Messaging_service ;  rdfs:comment "id-e492e88a-b251-4356-a045-70ac3d447caa" ;.
+
+mod:Back_OfficeAssignmentClaims  rdf:type archi:Assignment ;  rdfs:domain mod:Back_Office ;  rdfs:range mod:Claims ;  rdfs:comment "id-cf5691e2-c25e-4f59-ae80-6426f87b875d" ;.
+
+mod:DBMSRealizationData_access_service  rdf:type archi:Realization ;  rdfs:domain mod:DBMS ;  rdfs:range mod:Data_access_service ;  rdfs:comment "id-1639f334-2e26-4ab1-b7c5-345c2a6402ca" ;.
+
+mod:Data_access_serviceServingLegal_aid_back_office_system  rdf:type archi:Serving ;  rdfs:domain mod:Data_access_service ;  rdfs:range mod:Legal_aid_back_office_system ;  rdfs:comment "id-ac881e8c-927b-40e3-abc1-92760f234ced" ;.
+
+mod:AUTO_UServingActuarial  rdf:type archi:Serving ;  rdfs:domain mod:AUTO_U ;  rdfs:range mod:Actuarial ;  rdfs:comment "id-630a4997-889b-43da-b961-37337a903e6f" ;.
+
+mod:Financial_applicationRealizationBilling_service  rdf:type archi:Realization ;  rdfs:domain mod:Financial_application ;  rdfs:range mod:Billing_service ;  rdfs:comment "id-def88ce2-3798-4732-9ab8-b33bb924b337" ;.
+
+mod:ArchiSurance_back_up_server_clusterRealizationOr_Junction_back_office_suite_servers_  rdf:type archi:Realization ;  rdfs:domain mod:ArchiSurance_back_up_server_cluster ;  rdfs:range mod:Or_Junction_back_office_suite_servers_ ;  rdfs:comment "id-f858b4d4-5320-48ce-a213-dc48a8384ec6" ;.
+
+mod:P_ADMINServingUnderwriting  rdf:type archi:Serving ;  rdfs:domain mod:P_ADMIN ;  rdfs:range mod:Underwriting ;  rdfs:comment "id-27a74798-8ed3-4cf7-84d6-ec56275cc76f" ;.
+
+mod:Billing_serviceAccessBilling_data  rdf:type archi:Access ;  rdfs:domain mod:Billing_service ;  rdfs:range mod:Billing_data ;  rdfs:comment "id-4e5df285-104a-47af-b4cd-1c28e8f78d04" ;.
+
+mod:Back_OfficeAssignmentActuarial  rdf:type archi:Assignment ;  rdfs:domain mod:Back_Office ;  rdfs:range mod:Actuarial ;  rdfs:comment "id-74d00b56-849a-4563-a041-630069899778" ;.
+
+mod:ArchiSurance_Back_Office_SuiteCompositionAUTO_U  rdf:type archi:Composition ;  rdfs:domain mod:ArchiSurance_Back_Office_Suite ;  rdfs:range mod:AUTO_U ;  rdfs:comment "id-b76920b1-1ef9-4047-a8a4-c32b1725df38" ;.
+
+mod:Messaging_serviceServingCar_insurance_application  rdf:type archi:Serving ;  rdfs:domain mod:Messaging_service ;  rdfs:range mod:Car_insurance_application ;  rdfs:comment "id-4bfbcf7c-5275-4ec4-b04b-136487d57e10" ;.
+
+mod:ArchiSurance_general_purpose_server_clusterRealizationOr_Junction_back_office_suite_servers_  rdf:type archi:Realization ;  rdfs:domain mod:ArchiSurance_general_purpose_server_cluster ;  rdfs:range mod:Or_Junction_back_office_suite_servers_ ;  rdfs:comment "id-a655498f-efc7-4d82-98d1-bca66e904061" ;.
+
+mod:AUTO_UServingUnderwriting  rdf:type archi:Serving ;  rdfs:domain mod:AUTO_U ;  rdfs:range mod:Underwriting ;  rdfs:comment "id-cf76320f-6666-4e8b-9996-54a47251a505" ;.
+
+mod:Or_Junction_back_office_suite_servers_RealizationArchiSurance_Back_Office_Suite  rdf:type archi:Realization ;  rdfs:domain mod:Or_Junction_back_office_suite_servers_ ;  rdfs:range mod:ArchiSurance_Back_Office_Suite ;  rdfs:comment "id-0e38012c-bfd7-42dc-af93-5d6bdcc56b47" ;.
+
+mod:Data_access_serviceServingCar_insurance_application  rdf:type archi:Serving ;  rdfs:domain mod:Data_access_service ;  rdfs:range mod:Car_insurance_application ;  rdfs:comment "id-e049b32c-e080-4ab1-ad8a-a0e5b28a81c2" ;.
+
+mod:Send_invoiceAccessInvoice  rdf:type archi:Access ;  rdfs:domain mod:Send_invoice ;  rdfs:range mod:Invoice ;  rdfs:comment "id-6eca9d2e-429a-44b0-9bc5-b75c7aed3cec" ;.
+
+mod:Messaging_serviceServingHome_amp_Away_Financial_Application  rdf:type archi:Serving ;  rdfs:domain mod:Messaging_service ;  rdfs:range mod:Home_amp_Away_Financial_Application ;  rdfs:comment "id-2e6f7ffb-f0da-448e-b6f7-2a39e7aca709" ;.
+
+mod:VERSA_CLAIMServingClaims  rdf:type archi:Serving ;  rdfs:domain mod:VERSA_CLAIM ;  rdfs:range mod:Claims ;  rdfs:comment "id-9354f763-6485-45a5-8e35-a5421a49ede2" ;.
+
+mod:Billing_dataRealizationInvoice  rdf:type archi:Realization ;  rdfs:domain mod:Billing_data ;  rdfs:range mod:Invoice ;  rdfs:comment "id-bc1580a1-a6e6-4093-8fac-f096f0b2de59" ;.
+
+mod:Back_OfficeAssignmentFinance  rdf:type archi:Assignment ;  rdfs:domain mod:Back_Office ;  rdfs:range mod:Finance ;  rdfs:comment "id-935f2ffd-cc6c-4c79-aba5-2b7a284e9e51" ;.
+
+mod:ArchiSurance_Back_Office_SuiteCompositionP_ADMIN  rdf:type archi:Composition ;  rdfs:domain mod:ArchiSurance_Back_Office_Suite ;  rdfs:range mod:P_ADMIN ;  rdfs:comment "id-070efcf9-925e-4e69-8103-0d119c58c5dc" ;.
+
+mod:Back_OfficeAssignmentUnderwriting  rdf:type archi:Assignment ;  rdfs:domain mod:Back_Office ;  rdfs:range mod:Underwriting ;  rdfs:comment "id-4bc6bb4d-2865-4f04-8272-cd810a6dd9fd" ;.
+
+mod:Data_access_serviceServingHome_amp_Away_Financial_Application  rdf:type archi:Serving ;  rdfs:domain mod:Data_access_service ;  rdfs:range mod:Home_amp_Away_Financial_Application ;  rdfs:comment "id-797233c1-39e9-4f3a-a505-2b880cd3b319" ;.
+
+mod:ArchiSurance_Back_Office_SuiteCompositionVERSA_CLAIM  rdf:type archi:Composition ;  rdfs:domain mod:ArchiSurance_Back_Office_Suite ;  rdfs:range mod:VERSA_CLAIM ;  rdfs:comment "id-95b1840e-47f0-41ed-923c-830e7f10c140" ;.
+
+mod:MainframeCompositionDBMS  rdf:type archi:Composition ;  rdfs:domain mod:Mainframe ;  rdfs:range mod:DBMS ;  rdfs:comment "id-272e6f18-376e-42b2-8fbe-3b9754b4ac34" ;.
+
+mod:Interoperability_testing_snippet_8  rdf:type archi:model ;  archi:hasModellingElement mod:Finance ;  archi:hasModellingElement mod:AUTO_U ;  archi:hasModellingElement mod:Actuarial ;  archi:hasModellingElement mod:Billing_service ;  archi:hasModellingElement mod:Message_Queuing ;  archi:hasModellingElement mod:Billing_data ;  archi:hasModellingElement mod:ArchiSurance_back_up_server_cluster ;  archi:hasModellingElement mod:Messaging_service ;  archi:hasModellingElement mod:Legal_aid_back_office_system ;  archi:hasModellingElement mod:Underwriting ;  archi:hasModellingElement mod:Financial_application ;  archi:hasModellingElement mod:DBMS ;  archi:hasModellingElement mod:ArchiSurance_Back_Office_Suite ;  archi:hasModellingElement mod:Home_amp_Away_Financial_Application ;  archi:hasModellingElement mod:Mainframe ;  archi:hasModellingElement mod:Send_invoice ;  archi:hasModellingElement mod:VERSA_CLAIM ;  archi:hasModellingElement mod:Or_Junction_back_office_suite_servers_ ;  archi:hasModellingElement mod:P_ADMIN ;  archi:hasModellingElement mod:ArchiSurance_general_purpose_server_cluster ;  archi:hasModellingElement mod:Car_insurance_application ;  archi:hasModellingElement mod:Claims ;  archi:hasModellingElement mod:Back_Office ;  archi:hasModellingElement mod:Home_amp_Away_Policy_Administration ;  archi:hasModellingElement mod:Data_access_service ;  archi:hasModellingElement mod:Invoice ;  archi:hasModellingElement mod:Data_access_serviceServingHome_amp_Away_Policy_Administration ;  archi:hasModellingElement mod:Messaging_serviceServingHome_amp_Away_Policy_Administration ;  archi:hasModellingElement mod:Billing_serviceServingSend_invoice ;  archi:hasModellingElement mod:P_ADMINServingFinance ;  archi:hasModellingElement mod:MainframeCompositionMessage_Queuing ;  archi:hasModellingElement mod:Message_QueuingRealizationMessaging_service ;  archi:hasModellingElement mod:Back_OfficeAssignmentClaims ;  archi:hasModellingElement mod:DBMSRealizationData_access_service ;  archi:hasModellingElement mod:Data_access_serviceServingLegal_aid_back_office_system ;  archi:hasModellingElement mod:AUTO_UServingActuarial ;  archi:hasModellingElement mod:Financial_applicationRealizationBilling_service ;  archi:hasModellingElement mod:ArchiSurance_back_up_server_clusterRealizationOr_Junction_back_office_suite_servers_ ;  archi:hasModellingElement mod:P_ADMINServingUnderwriting ;  archi:hasModellingElement mod:Billing_serviceAccessBilling_data ;  archi:hasModellingElement mod:Back_OfficeAssignmentActuarial ;  archi:hasModellingElement mod:ArchiSurance_Back_Office_SuiteCompositionAUTO_U ;  archi:hasModellingElement mod:Messaging_serviceServingCar_insurance_application ;  archi:hasModellingElement mod:ArchiSurance_general_purpose_server_clusterRealizationOr_Junction_back_office_suite_servers_ ;  archi:hasModellingElement mod:AUTO_UServingUnderwriting ;  archi:hasModellingElement mod:Or_Junction_back_office_suite_servers_RealizationArchiSurance_Back_Office_Suite ;  archi:hasModellingElement mod:Data_access_serviceServingCar_insurance_application ;  archi:hasModellingElement mod:Send_invoiceAccessInvoice ;  archi:hasModellingElement mod:Messaging_serviceServingHome_amp_Away_Financial_Application ;  archi:hasModellingElement mod:VERSA_CLAIMServingClaims ;  archi:hasModellingElement mod:Billing_dataRealizationInvoice ;  archi:hasModellingElement mod:Back_OfficeAssignmentFinance ;  archi:hasModellingElement mod:ArchiSurance_Back_Office_SuiteCompositionP_ADMIN ;  archi:hasModellingElement mod:Back_OfficeAssignmentUnderwriting ;  archi:hasModellingElement mod:Data_access_serviceServingHome_amp_Away_Financial_Application ;  archi:hasModellingElement mod:ArchiSurance_Back_Office_SuiteCompositionVERSA_CLAIM ;  archi:hasModellingElement mod:MainframeCompositionDBMS ;.

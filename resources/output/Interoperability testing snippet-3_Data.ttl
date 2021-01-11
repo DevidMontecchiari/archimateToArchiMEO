@@ -1,0 +1,130 @@
+# baseURI: http://ikm-group.ch/archiMEO/archimate
+# imports: http://ikm-group.ch/archiMEO/emo
+# imports: http://ikm-group.ch/archiMEO/eo
+# imports: http://ikm-group.ch/archiMEO/top
+# imports: http://ikm-group.ch/archimeo/iso42010
+
+@prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
+@prefix mod: <http://ikm-group.ch/archiMEO/mod#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix emo: <http://ikm-group.ch/archiMEO/emo#> .
+@prefix eo: <http://ikm-group.ch/archiMEO/eo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfsplus: <http://topbraid.org/spin/rdfsplus#> .
+@prefix top: <http://ikm-group.ch/archiMEO/top#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mod:Customer_Care  rdf:type archi:Capability ;  rdfs:label "Customer Care" ;  rdfs:comment "id-c4c26b3b-e92e-454d-aea3-99e60cb5455a" ;.
+
+mod:Claim_administration  rdf:type archi:Capability ;  rdfs:label "Claim administration" ;  rdfs:comment "id-3b7dab37-c7da-46df-b4bf-ff1a72876f74" ;.
+
+mod:Serve_Customers  rdf:type archi:ValueStream ;  rdfs:label "Serve Customers" ;  rdfs:comment "id-a687b6e7-f544-4f97-bc7d-f83fac52da1f" ;.
+
+mod:Customer_data_management  rdf:type archi:Capability ;  rdfs:label "Customer data management" ;  rdfs:comment "id-8e51a639-8aeb-4ab9-9a8a-ef564d331e48" ;.
+
+mod:Product_Engineering  rdf:type archi:Capability ;  rdfs:label "Product Engineering" ;  rdfs:comment "id-7cf4136c-aabc-420a-bb22-14d0e573571d" ;.
+
+mod:Customer_relationship_management  rdf:type archi:Capability ;  rdfs:label "Customer relationship management" ;  rdfs:comment "id-83daef41-4a84-4eea-a798-de7cb7bad63e" ;.
+
+mod:Claims  rdf:type archi:BusinessFunction ;  rdfs:label "Claims" ;  rdfs:comment "id-eddd93a6-ae16-45f4-90e5-37a8e59af044" ;.
+
+mod:Technical_staff  rdf:type archi:Resource ;  rdfs:label "Technical staff" ;  rdfs:comment "id-d181c765-b689-4b06-8701-eab8f7ee9158" ;.
+
+mod:Marketing_staff  rdf:type archi:Resource ;  rdfs:label "Marketing staff" ;  rdfs:comment "id-76293f5b-8e95-407e-aaaa-5bf57da27eac" ;.
+
+mod:And_Junction_Claim_Management_realization  rdf:type archi:AndJunction ;  rdfs:label "And Junction Claim Management realization" ;  rdfs:comment "id-bc27e0b7-97ce-438f-8201-9c2df7fca10d" ;.
+
+mod:Develop_Product  rdf:type archi:ValueStream ;  rdfs:label "Develop Product" ;  rdfs:comment "id-c29b6a27-3ee7-469b-a70f-2a57216a22b6" ;.
+
+mod:Product_Definition  rdf:type archi:Capability ;  rdfs:label "Product Definition" ;  rdfs:comment "id-7782b9b9-070b-4a7b-9d8d-9b23369655f7" ;.
+
+mod:Market_and_Sell_Products  rdf:type archi:ValueStream ;  rdfs:label "Market and Sell Products" ;  rdfs:comment "id-22eb55a5-6267-49c3-9e89-4f89079682e4" ;.
+
+mod:Social_Media  rdf:type archi:Grouping ;  rdfs:label "Social Media" ;  rdfs:comment "id-363388d7-9e0f-4128-b23a-6b4fb5c261e5" ;.
+
+mod:Customer_service  rdf:type archi:Capability ;  rdfs:label "Customer service" ;  rdfs:comment "id-a331d16b-830b-40d5-8d54-8ca254406fe7" ;.
+
+mod:Product_Management  rdf:type archi:Capability ;  rdfs:label "Product Management" ;  rdfs:comment "id-7558a246-0a95-436e-acf5-beec25bdd26c" ;.
+
+mod:Digital_Media_strategy  rdf:type archi:CourseOfAction ;  rdfs:label "Digital Media strategy" ;  rdfs:comment "id-9905e593-7db9-42e7-ab8c-ae9b121c88d9" ;.
+
+mod:Claim_settlement  rdf:type archi:Capability ;  rdfs:label "Claim settlement" ;  rdfs:comment "id-76cc3871-f2af-4470-ae45-280c2c57688a" ;.
+
+mod:Social_media_apps  rdf:type archi:Resource ;  rdfs:label "Social media apps" ;  rdfs:comment "id-0794cb1a-c2f2-45a9-9980-e7d1721af7cb" ;.
+
+mod:Social_Media_management  rdf:type archi:Capability ;  rdfs:label "Social Media management" ;  rdfs:comment "id-94b27efa-6ffd-4740-8d29-7a4a43f56b72" ;.
+
+mod:Market_Development  rdf:type archi:Capability ;  rdfs:label "Market Development" ;  rdfs:comment "id-825f821f-97b8-42d5-a8aa-1c8877ee4bfd" ;.
+
+mod:Acquire_Insurance_Prodict  rdf:type archi:ValueStream ;  rdfs:label "Acquire Insurance Prodict" ;  rdfs:comment "id-38e2f5f2-467d-4a4e-a4c9-d54f8f8298ad" ;.
+
+mod:Actuarial  rdf:type archi:BusinessFunction ;  rdfs:label "Actuarial" ;  rdfs:comment "id-38db994a-58b4-49a9-b722-34d53ca2ee2f" ;.
+
+mod:Service_channel_management  rdf:type archi:Capability ;  rdfs:label "Service channel management" ;  rdfs:comment "id-7ddbdcff-e0d9-47c6-a14d-438610658dd7" ;.
+
+mod:Campaign_Management  rdf:type archi:Capability ;  rdfs:label "Campaign Management" ;  rdfs:comment "id-ae51f0cc-5ee4-4215-9ead-263419ff1716" ;.
+
+mod:Manage_Policies_and_Claims  rdf:type archi:ValueStream ;  rdfs:label "Manage Policies and Claims" ;  rdfs:comment "id-1511d141-4b5d-43b9-993c-ae25f3a0a30a" ;.
+
+mod:Underwriting  rdf:type archi:BusinessFunction ;  rdfs:label "Underwriting" ;  rdfs:comment "id-049ceb6b-518a-44cc-95a8-9dfb6929e7af" ;.
+
+mod:Claim_Management  rdf:type archi:Capability ;  rdfs:label "Claim Management" ;  rdfs:comment "id-b67bd3a4-c140-412b-aa17-e40b7d5c007b" ;.
+
+mod:Manage_Policies_and_ClaimsFlowServe_Customers  rdf:type archi:Flow ;  rdfs:domain mod:Manage_Policies_and_Claims ;  rdfs:range mod:Serve_Customers ;  rdfs:comment "id-7aacfbed-dff6-42c2-bb9e-935196f8ca42" ;.
+
+mod:ClaimsRealizationAnd_Junction_Claim_Management_realization  rdf:type archi:Realization ;  rdfs:domain mod:Claims ;  rdfs:range mod:And_Junction_Claim_Management_realization ;  rdfs:comment "id-5a58775d-257f-44d1-8c65-66bb657ac5be" ;.
+
+mod:Acquire_Insurance_ProdictCompositionDevelop_Product  rdf:type archi:Composition ;  rdfs:domain mod:Acquire_Insurance_Prodict ;  rdfs:range mod:Develop_Product ;  rdfs:comment "id-21e7e66f-4101-4d62-b152-90ce1bb93257" ;.
+
+mod:Claim_ManagementAggregationClaim_administration  rdf:type archi:Aggregation ;  rdfs:domain mod:Claim_Management ;  rdfs:range mod:Claim_administration ;  rdfs:comment "id-d40b7d2c-d20a-4f9c-885c-28fcc1dbe54d" ;.
+
+mod:Social_MediaCompositionMarketing_staff  rdf:type archi:Composition ;  rdfs:domain mod:Social_Media ;  rdfs:range mod:Marketing_staff ;  rdfs:comment "id-23ef256f-f058-4687-a5d5-d99a0bfa7b5b" ;.
+
+mod:Technical_staffAssignmentSocial_Media_management  rdf:type archi:Assignment ;  rdfs:domain mod:Technical_staff ;  rdfs:range mod:Social_Media_management ;  rdfs:comment "id-675a9758-34c5-4b08-b99f-d31bfc743c07" ;.
+
+mod:Social_MediaCompositionTechnical_staff  rdf:type archi:Composition ;  rdfs:domain mod:Social_Media ;  rdfs:range mod:Technical_staff ;  rdfs:comment "id-2aa44813-7d83-4002-836d-bac9f94c9b1e" ;.
+
+mod:Social_Media_managementRealizationDigital_Media_strategy  rdf:type archi:Realization ;  rdfs:domain mod:Social_Media_management ;  rdfs:range mod:Digital_Media_strategy ;  rdfs:comment "id-b88ff8ac-20ee-454f-b690-7a39cad47cf2" ;.
+
+mod:Social_MediaCompositionSocial_media_apps  rdf:type archi:Composition ;  rdfs:domain mod:Social_Media ;  rdfs:range mod:Social_media_apps ;  rdfs:comment "id-1e26e6a3-a2bc-4767-b046-0fe65ccefc70" ;.
+
+mod:Claim_ManagementAggregationClaim_settlement  rdf:type archi:Aggregation ;  rdfs:domain mod:Claim_Management ;  rdfs:range mod:Claim_settlement ;  rdfs:comment "id-bef1314d-539d-4d8b-959b-1a6af348f3f6" ;.
+
+mod:Social_MediaCompositionDigital_Media_strategy  rdf:type archi:Composition ;  rdfs:domain mod:Social_Media ;  rdfs:range mod:Digital_Media_strategy ;  rdfs:comment "id-423dba35-28b7-40b4-a6aa-3fc76161fd3e" ;.
+
+mod:Customer_CareCompositionCustomer_service  rdf:type archi:Composition ;  rdfs:domain mod:Customer_Care ;  rdfs:range mod:Customer_service ;  rdfs:comment "id-85acb18a-735a-4865-ab99-72fb72e7f22f" ;.
+
+mod:Develop_ProductFlowMarket_and_Sell_Products  rdf:type archi:Flow ;  rdfs:domain mod:Develop_Product ;  rdfs:range mod:Market_and_Sell_Products ;  rdfs:comment "id-7ea4856c-72a3-470c-aeb5-bd158cd39c2b" ;.
+
+mod:Social_MediaCompositionSocial_Media_management  rdf:type archi:Composition ;  rdfs:domain mod:Social_Media ;  rdfs:range mod:Social_Media_management ;  rdfs:comment "id-c1799fe0-84ab-440f-b730-5ec00c6b2a5e" ;.
+
+mod:Social_media_appsAssignmentSocial_Media_management  rdf:type archi:Assignment ;  rdfs:domain mod:Social_media_apps ;  rdfs:range mod:Social_Media_management ;  rdfs:comment "id-eba63208-3d76-4e02-9879-7df07c426554" ;.
+
+mod:ActuarialRealizationAnd_Junction_Claim_Management_realization  rdf:type archi:Realization ;  rdfs:domain mod:Actuarial ;  rdfs:range mod:And_Junction_Claim_Management_realization ;  rdfs:comment "id-75739d84-c8c0-4264-a99c-15581cceb48f" ;.
+
+mod:UnderwritingRealizationAnd_Junction_Claim_Management_realization  rdf:type archi:Realization ;  rdfs:domain mod:Underwriting ;  rdfs:range mod:And_Junction_Claim_Management_realization ;  rdfs:comment "id-eef9d4b9-d00d-4fbc-9d66-ed875bfcff6b" ;.
+
+mod:Market_and_Sell_ProductsFlowManage_Policies_and_Claims  rdf:type archi:Flow ;  rdfs:domain mod:Market_and_Sell_Products ;  rdfs:range mod:Manage_Policies_and_Claims ;  rdfs:comment "id-68507903-1aeb-45cf-9589-2d4ca6b76577" ;.
+
+mod:And_Junction_Claim_Management_realizationRealizationClaim_Management  rdf:type archi:Realization ;  rdfs:domain mod:And_Junction_Claim_Management_realization ;  rdfs:range mod:Claim_Management ;  rdfs:comment "id-1d7cedee-4f29-4431-b355-f27263b2ad8a" ;.
+
+mod:Customer_CareCompositionCustomer_relationship_management  rdf:type archi:Composition ;  rdfs:domain mod:Customer_Care ;  rdfs:range mod:Customer_relationship_management ;  rdfs:comment "id-be201db9-c355-4933-8dc3-9a6d658a5c4d" ;.
+
+mod:ActuarialRealizationProduct_Management  rdf:type archi:Realization ;  rdfs:domain mod:Actuarial ;  rdfs:range mod:Product_Management ;  rdfs:comment "id-676037b8-62eb-44cf-ae3c-dc000f045166" ;.
+
+mod:Acquire_Insurance_ProdictCompositionMarket_and_Sell_Products  rdf:type archi:Composition ;  rdfs:domain mod:Acquire_Insurance_Prodict ;  rdfs:range mod:Market_and_Sell_Products ;  rdfs:comment "id-eee7e86d-9281-4583-b65a-7974dcb738af" ;.
+
+mod:Customer_CareCompositionService_channel_management  rdf:type archi:Composition ;  rdfs:domain mod:Customer_Care ;  rdfs:range mod:Service_channel_management ;  rdfs:comment "id-dded2883-158b-4f31-9bfa-8df7a4d3be05" ;.
+
+mod:Marketing_staffAssignmentSocial_Media_management  rdf:type archi:Assignment ;  rdfs:domain mod:Marketing_staff ;  rdfs:range mod:Social_Media_management ;  rdfs:comment "id-01ffe84c-1615-41cf-bbc5-299b525be170" ;.
+
+mod:Acquire_Insurance_ProdictCompositionManage_Policies_and_Claims  rdf:type archi:Composition ;  rdfs:domain mod:Acquire_Insurance_Prodict ;  rdfs:range mod:Manage_Policies_and_Claims ;  rdfs:comment "id-ebb0fccd-a070-4717-bc1a-830ff8810739" ;.
+
+mod:Customer_CareCompositionCustomer_data_management  rdf:type archi:Composition ;  rdfs:domain mod:Customer_Care ;  rdfs:range mod:Customer_data_management ;  rdfs:comment "id-62462a54-170d-4d3c-897a-3ca998d58720" ;.
+
+mod:Acquire_Insurance_ProdictCompositionServe_Customers  rdf:type archi:Composition ;  rdfs:domain mod:Acquire_Insurance_Prodict ;  rdfs:range mod:Serve_Customers ;  rdfs:comment "id-ad6896bd-5b5c-4531-86b4-c448f9fc6574" ;.
+
+mod:Interoperability_testing_snippet_3  rdf:type archi:model ;  archi:hasModellingElement mod:Customer_Care ;  archi:hasModellingElement mod:Claim_administration ;  archi:hasModellingElement mod:Serve_Customers ;  archi:hasModellingElement mod:Customer_data_management ;  archi:hasModellingElement mod:Product_Engineering ;  archi:hasModellingElement mod:Customer_relationship_management ;  archi:hasModellingElement mod:Claims ;  archi:hasModellingElement mod:Technical_staff ;  archi:hasModellingElement mod:Marketing_staff ;  archi:hasModellingElement mod:And_Junction_Claim_Management_realization ;  archi:hasModellingElement mod:Develop_Product ;  archi:hasModellingElement mod:Product_Definition ;  archi:hasModellingElement mod:Market_and_Sell_Products ;  archi:hasModellingElement mod:Social_Media ;  archi:hasModellingElement mod:Customer_service ;  archi:hasModellingElement mod:Product_Management ;  archi:hasModellingElement mod:Digital_Media_strategy ;  archi:hasModellingElement mod:Claim_settlement ;  archi:hasModellingElement mod:Social_media_apps ;  archi:hasModellingElement mod:Social_Media_management ;  archi:hasModellingElement mod:Market_Development ;  archi:hasModellingElement mod:Acquire_Insurance_Prodict ;  archi:hasModellingElement mod:Actuarial ;  archi:hasModellingElement mod:Service_channel_management ;  archi:hasModellingElement mod:Campaign_Management ;  archi:hasModellingElement mod:Manage_Policies_and_Claims ;  archi:hasModellingElement mod:Underwriting ;  archi:hasModellingElement mod:Claim_Management ;  archi:hasModellingElement mod:Manage_Policies_and_ClaimsFlowServe_Customers ;  archi:hasModellingElement mod:ClaimsRealizationAnd_Junction_Claim_Management_realization ;  archi:hasModellingElement mod:Acquire_Insurance_ProdictCompositionDevelop_Product ;  archi:hasModellingElement mod:Claim_ManagementAggregationClaim_administration ;  archi:hasModellingElement mod:Social_MediaCompositionMarketing_staff ;  archi:hasModellingElement mod:Technical_staffAssignmentSocial_Media_management ;  archi:hasModellingElement mod:Social_MediaCompositionTechnical_staff ;  archi:hasModellingElement mod:Social_Media_managementRealizationDigital_Media_strategy ;  archi:hasModellingElement mod:Social_MediaCompositionSocial_media_apps ;  archi:hasModellingElement mod:Claim_ManagementAggregationClaim_settlement ;  archi:hasModellingElement mod:Social_MediaCompositionDigital_Media_strategy ;  archi:hasModellingElement mod:Customer_CareCompositionCustomer_service ;  archi:hasModellingElement mod:Develop_ProductFlowMarket_and_Sell_Products ;  archi:hasModellingElement mod:Social_MediaCompositionSocial_Media_management ;  archi:hasModellingElement mod:Social_media_appsAssignmentSocial_Media_management ;  archi:hasModellingElement mod:ActuarialRealizationAnd_Junction_Claim_Management_realization ;  archi:hasModellingElement mod:UnderwritingRealizationAnd_Junction_Claim_Management_realization ;  archi:hasModellingElement mod:Market_and_Sell_ProductsFlowManage_Policies_and_Claims ;  archi:hasModellingElement mod:And_Junction_Claim_Management_realizationRealizationClaim_Management ;  archi:hasModellingElement mod:Customer_CareCompositionCustomer_relationship_management ;  archi:hasModellingElement mod:ActuarialRealizationProduct_Management ;  archi:hasModellingElement mod:Acquire_Insurance_ProdictCompositionMarket_and_Sell_Products ;  archi:hasModellingElement mod:Customer_CareCompositionService_channel_management ;  archi:hasModellingElement mod:Marketing_staffAssignmentSocial_Media_management ;  archi:hasModellingElement mod:Acquire_Insurance_ProdictCompositionManage_Policies_and_Claims ;  archi:hasModellingElement mod:Customer_CareCompositionCustomer_data_management ;  archi:hasModellingElement mod:Acquire_Insurance_ProdictCompositionServe_Customers ;.
