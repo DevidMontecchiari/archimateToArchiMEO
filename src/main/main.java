@@ -26,7 +26,8 @@ public class main {
 //		String raw=readFileAsString("resources//Interoperability//examples//snippet//Interoperability testing snippet-7.xml");
 //		String raw=readFileAsString("resources//Interoperability//examples//snippet//Interoperability testing snippet-8.xml");
 //		String raw=readFileAsString("resources//Interoperability//examples//snippet//Interoperability testing snippet-9.xml");
-		String raw=readFileAsString("resources//Interoperability//examples//snippet//Interoperability testing snippet-10.xml");
+//		String raw=readFileAsString("resources//Interoperability//examples//snippet//Interoperability testing snippet-10.xml");
+		String raw=readFileAsString("resources//CheapFlight//Cheapflight Architecture.xml");
 			
 		xmlModel xmlModel=new xmlModel(raw);
 		

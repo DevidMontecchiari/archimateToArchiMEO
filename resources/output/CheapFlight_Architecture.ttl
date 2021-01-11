@@ -1,0 +1,162 @@
+# baseURI: http://ikm-group.ch/archiMEO/archimate
+# imports: http://ikm-group.ch/archiMEO/emo
+# imports: http://ikm-group.ch/archiMEO/eo
+# imports: http://ikm-group.ch/archiMEO/top
+# imports: http://ikm-group.ch/archimeo/iso42010
+
+@prefix archi: <http://ikm-group.ch/archiMEO/archimate#> .
+@prefix mod: <http://ikm-group.ch/archiMEO/mod#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix emo: <http://ikm-group.ch/archiMEO/emo#> .
+@prefix eo: <http://ikm-group.ch/archiMEO/eo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdfsplus: <http://topbraid.org/spin/rdfsplus#> .
+@prefix top: <http://ikm-group.ch/archiMEO/top#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+mod:Ticket_information  rdf:type archi:Artifact ;  rdfs:label "Ticket information" ;  rdfs:comment "Id-.7O_Wq6GAqACIRMj" ;.
+
+mod:Payment_verification_interface  rdf:type archi:ApplicationInterface ;  rdfs:label "Payment verification interface" ;  rdfs:comment "Id-BX2Vwa6GAqACIQ5a" ;.
+
+mod:Seat_reservation  rdf:type archi:ApplicationService ;  rdfs:label "Seat reservation" ;  rdfs:comment "Id-wNq7Wq6GAqACIRHo" ;.
+
+mod:Online_booking  rdf:type archi:BusinessService ;  rdfs:label "Online booking" ;  rdfs:comment "Id-.2FrWq6GAqACIRGW" ;.
+
+mod:Boarding_pass  rdf:type archi:BusinessObject ;  rdfs:label "Boarding pass" ;  rdfs:comment "Id-FgVI2q6GAqACIRUv" ;.
+
+mod:Data_storage  rdf:type archi:TechnologyService ;  rdfs:label "Data storage" ;  rdfs:comment "Id-crHfWq6GAqACIRMN" ;.
+
+mod:Kiosk_Terminal  rdf:type archi:Node ;  rdfs:label "Kiosk Terminal" ;  rdfs:comment "Id-OxgE2q6GAqACIRWD" ;.
+
+mod:Boarding  rdf:type archi:BusinessProcess ;  rdfs:label "Boarding" ;  rdfs:comment "Id-gIPA2q6GAqACIROy" ;.
+
+mod:CRM_System  rdf:type archi:ApplicationComponent ;  rdfs:label "CRM System" ;  rdfs:comment "Id-W0nlwa6GAqACIQ35" ;.
+
+mod:Kiosk_system  rdf:type archi:ApplicationComponent ;  rdfs:label "Kiosk system" ;  rdfs:comment "Id-7mmg2q6GAqACIRPK" ;.
+
+mod:Check_in_process  rdf:type archi:BusinessProcess ;  rdfs:label "Check-in process" ;  rdfs:comment "Id-iAw7Wq6GAqACIRHM" ;.
+
+mod:Payment_provider  rdf:type archi:Grouping ;  rdfs:label "Payment provider" ;  rdfs:comment "Id-1aZVwa6GAqACIQ6E" ;.
+
+mod:Flight_reservation  rdf:type archi:ApplicationService ;  rdfs:label "Flight reservation" ;  rdfs:comment "Id-Zm.7Wq6GAqACIRIB" ;.
+
+mod:KIosk_checkin  rdf:type archi:ApplicationService ;  rdfs:label "KIosk checkin" ;  rdfs:comment "Id-JLhg2q6GAqACIRPf" ;.
+
+mod:e_Ticket  rdf:type archi:DataObject ;  rdfs:label "e-Ticket" ;  rdfs:comment "Id-Z1fXWq6GAqACIRIy" ;.
+
+mod:Baggage_drop_off  rdf:type archi:BusinessProcess ;  rdfs:label "Baggage drop-off" ;  rdfs:comment "Id-2wNA2q6GAqACIROI" ;.
+
+mod:Online_check_in  rdf:type archi:BusinessService ;  rdfs:label "Online check-in" ;  rdfs:comment "Id-jD0Q2q6GAqACIRQb" ;.
+
+mod:Reservation_system  rdf:type archi:ApplicationComponent ;  rdfs:label "Reservation system" ;  rdfs:comment "Id-pdjbWq6GAqACIRG1" ;.
+
+mod:Departure_Process  rdf:type archi:BusinessProcess ;  rdfs:label "Departure Process" ;  rdfs:comment "Id-ts__Wq6GAqACIRNj" ;.
+
+mod:Ticket  rdf:type archi:BusinessObject ;  rdfs:label "Ticket" ;  rdfs:comment "Id-OVTXWq6GAqACIRIl" ;.
+
+mod:Get_reservation_data  rdf:type archi:ApplicationInterface ;  rdfs:label "Get reservation data" ;  rdfs:comment "Id-iJLU.q6GAqACIRt." ;.
+
+mod:DBMS  rdf:type archi:SystemSoftware ;  rdfs:label "DBMS" ;  rdfs:comment "Id-hq8fWq6GAqACIRLV" ;.
+
+mod:SMS  rdf:type archi:Representation ;  rdfs:label "SMS" ;  rdfs:comment "Id-I30vWq6GAqACIRKF" ;.
+
+mod:Linux_Server  rdf:type archi:Node ;  rdfs:label "Linux Server" ;  rdfs:comment "Id-yNnvWq6GAqACIRLM" ;.
+
+mod:Booking_process  rdf:type archi:BusinessProcess ;  rdfs:label "Booking process" ;  rdfs:comment "Id-8kqrWq6GAqACIRGD" ;.
+
+mod:Access_customer_data  rdf:type archi:ApplicationInterface ;  rdfs:label "Access customer data" ;  rdfs:comment "Id-gjsVwa6GAqACIQ4k" ;.
+
+mod:PDF  rdf:type archi:Representation ;  rdfs:label "PDF" ;  rdfs:comment "Id-VxsvWq6GAqACIRKK" ;.
+
+mod:Payment_Verification_Service  rdf:type archi:ApplicationService ;  rdfs:label "Payment Verification Service" ;  rdfs:comment "Id-4XaVwa6GAqACIQ5R" ;.
+
+mod:Cheapflight  rdf:type archi:Grouping ;  rdfs:label "Cheapflight" ;  rdfs:comment "Id-5R1Vwa6GAqACIQ6R" ;.
+
+mod:Customer_Agent  rdf:type archi:BusinessRole ;  rdfs:label "Customer Agent" ;  rdfs:comment "Id-ajfI2q6GAqACIRVX" ;.
+
+mod:Customer_data  rdf:type archi:DataObject ;  rdfs:label "Customer data" ;  rdfs:comment "Id-HAAVwa6GAqACIQ4E" ;.
+
+mod:Self_check_in  rdf:type archi:BusinessService ;  rdfs:label "Self check-in" ;  rdfs:comment "Id-f1EQ2q6GAqACIRQI" ;.
+
+mod:Passenger  rdf:type archi:BusinessRole ;  rdfs:label "Passenger" ;  rdfs:comment "Id-vbfLWq6GAqACIRFy" ;.
+
+mod:Check_in_processAccessBoarding_pass  rdf:type archi:Access ;  rdfs:domain mod:Check_in_process ;  rdfs:range mod:Boarding_pass ;  rdfs:comment "Id-_gVI2q6GAqACIRUz" ;.
+
+mod:Reservation_systemRealizationFlight_reservation  rdf:type archi:Realization ;  rdfs:domain mod:Reservation_system ;  rdfs:range mod:Flight_reservation ;  rdfs:comment "Id-6zR7Wq6GAqACIRIT" ;.
+
+mod:Check_in_processAccessTicket  rdf:type archi:Access ;  rdfs:domain mod:Check_in_process ;  rdfs:range mod:Ticket ;  rdfs:comment "Id-pAoI2q6GAqACIRUN" ;.
+
+mod:KIosk_checkinServingCheck_in_process  rdf:type archi:Serving ;  rdfs:domain mod:KIosk_checkin ;  rdfs:range mod:Check_in_process ;  rdfs:comment "Id-ohtg2q6GAqACIRP0" ;.
+
+mod:Online_bookingServingPassenger  rdf:type archi:Serving ;  rdfs:domain mod:Online_booking ;  rdfs:range mod:Passenger ;  rdfs:comment "Id-k5VrWq6GAqACIRGn" ;.
+
+mod:Booking_processRealizationOnline_booking  rdf:type archi:Realization ;  rdfs:domain mod:Booking_process ;  rdfs:range mod:Online_booking ;  rdfs:comment "Id-z2FrWq6GAqACIRGa" ;.
+
+mod:Booking_processAccessTicket  rdf:type archi:Access ;  rdfs:domain mod:Booking_process ;  rdfs:range mod:Ticket ;  rdfs:comment "Id-IhIPWq6GAqACIRJR" ;.
+
+mod:PassengerAccessBoarding_pass  rdf:type archi:Access ;  rdfs:domain mod:Passenger ;  rdfs:range mod:Boarding_pass ;  rdfs:comment "Id-AhDI2q6GAqACIRVM" ;.
+
+mod:Payment_Verification_ServiceServingFlight_reservation  rdf:type archi:Serving ;  rdfs:domain mod:Payment_Verification_Service ;  rdfs:range mod:Flight_reservation ;  rdfs:comment "Id-B8JVwa6GAqACIQ57" ;.
+
+mod:PassengerAccessTicket  rdf:type archi:Access ;  rdfs:domain mod:Passenger ;  rdfs:range mod:Ticket ;  rdfs:comment "Id-c3kPWq6GAqACIRJf" ;.
+
+mod:Kiosk_systemRealizationKIosk_checkin  rdf:type archi:Realization ;  rdfs:domain mod:Kiosk_system ;  rdfs:range mod:KIosk_checkin ;  rdfs:comment "Id-Qrhg2q6GAqACIRPj" ;.
+
+mod:Ticket_informationRealizatione_Ticket  rdf:type archi:Realization ;  rdfs:domain mod:Ticket_information ;  rdfs:range mod:e_Ticket ;  rdfs:comment "Id-E6B_Wq6GAqACIRMw" ;.
+
+mod:DBMSRealizationData_storage  rdf:type archi:Realization ;  rdfs:domain mod:DBMS ;  rdfs:range mod:Data_storage ;  rdfs:comment "Id-b7vfWq6GAqACIRMa" ;.
+
+mod:Reservation_systemRealizationSeat_reservation  rdf:type archi:Realization ;  rdfs:domain mod:Reservation_system ;  rdfs:range mod:Seat_reservation ;  rdfs:comment "Id-9fW7Wq6GAqACIRH5" ;.
+
+mod:DBMSAccessTicket_information  rdf:type archi:Access ;  rdfs:domain mod:DBMS ;  rdfs:range mod:Ticket_information ;  rdfs:comment "Id-QaF_Wq6GAqACIRNY" ;.
+
+mod:SMSRealizationTicket  rdf:type archi:Realization ;  rdfs:domain mod:SMS ;  rdfs:range mod:Ticket ;  rdfs:comment "Id-qzCvWq6GAqACIRKo" ;.
+
+mod:Reservation_systemAssociationGet_reservation_data  rdf:type archi:Association ;  rdfs:domain mod:Reservation_system ;  rdfs:range mod:Get_reservation_data ;  rdfs:comment "Id-.JLU.q6GAqACIRuC" ;.
+
+mod:Get_reservation_dataServingKiosk_system  rdf:type archi:Serving ;  rdfs:domain mod:Get_reservation_data ;  rdfs:range mod:Kiosk_system ;  rdfs:comment "Id-PLbU.q6GAqACIRuT" ;.
+
+mod:CRM_SystemAssociationAccess_customer_data  rdf:type archi:Association ;  rdfs:domain mod:CRM_System ;  rdfs:range mod:Access_customer_data ;  rdfs:comment "Id-ajsVwa6GAqACIQ4o" ;.
+
+mod:Data_storageServingReservation_system  rdf:type archi:Serving ;  rdfs:domain mod:Data_storage ;  rdfs:range mod:Reservation_system ;  rdfs:comment "Id-4zlfWq6GAqACIRL." ;.
+
+mod:Check_in_processRealizationSelf_check_in  rdf:type archi:Realization ;  rdfs:domain mod:Check_in_process ;  rdfs:range mod:Self_check_in ;  rdfs:comment "Id-aNEQ2q6GAqACIRQM" ;.
+
+mod:Customer_AgentAssignmentBaggage_drop_off  rdf:type archi:Assignment ;  rdfs:domain mod:Customer_Agent ;  rdfs:range mod:Baggage_drop_off ;  rdfs:comment "Id-ERYo2q6GAqACIRVo" ;.
+
+mod:Access_customer_dataServingReservation_system  rdf:type archi:Serving ;  rdfs:domain mod:Access_customer_data ;  rdfs:range mod:Reservation_system ;  rdfs:comment "Id-DoiVwa6GAqACIQ4_" ;.
+
+mod:e_TicketRealizationTicket  rdf:type archi:Realization ;  rdfs:domain mod:e_Ticket ;  rdfs:range mod:Ticket ;  rdfs:comment "Id-23E3Wq6GAqACIRI_" ;.
+
+mod:Self_check_inServingPassenger  rdf:type archi:Serving ;  rdfs:domain mod:Self_check_in ;  rdfs:range mod:Passenger ;  rdfs:comment "Id-TM8Q2q6GAqACIRQ0" ;.
+
+mod:Kiosk_TerminalRealizationKiosk_system  rdf:type archi:Realization ;  rdfs:domain mod:Kiosk_Terminal ;  rdfs:range mod:Kiosk_system ;  rdfs:comment "Id-wSJU.q6GAqACIRtd" ;.
+
+mod:CRM_SystemAccessCustomer_data  rdf:type archi:Access ;  rdfs:domain mod:CRM_System ;  rdfs:range mod:Customer_data ;  rdfs:comment "Id-RgAVwa6GAqACIQ4J" ;.
+
+mod:Linux_ServerAssignmentDBMS  rdf:type archi:Assignment ;  rdfs:domain mod:Linux_Server ;  rdfs:range mod:DBMS ;  rdfs:comment "Id-sQSfWq6GAqACIRLa" ;.
+
+mod:Check_in_processRealizationOnline_check_in  rdf:type archi:Realization ;  rdfs:domain mod:Check_in_process ;  rdfs:range mod:Online_check_in ;  rdfs:comment "Id-wj0Q2q6GAqACIRQf" ;.
+
+mod:Reservation_systemAccesse_Ticket  rdf:type archi:Access ;  rdfs:domain mod:Reservation_system ;  rdfs:range mod:e_Ticket ;  rdfs:comment "Id-JlVPWq6GAqACIRJ8" ;.
+
+mod:Flight_reservationServingBooking_process  rdf:type archi:Serving ;  rdfs:domain mod:Flight_reservation ;  rdfs:range mod:Booking_process ;  rdfs:comment "Id-hxrbWq6GAqACIRG." ;.
+
+mod:PDFRealizationTicket  rdf:type archi:Realization ;  rdfs:domain mod:PDF ;  rdfs:range mod:Ticket ;  rdfs:comment "Id-K2yvWq6GAqACIRK6" ;.
+
+mod:Departure_ProcessCompositionCheck_in_process  rdf:type archi:Composition ;  rdfs:domain mod:Departure_Process ;  rdfs:range mod:Check_in_process ;  rdfs:comment "Id-wmCA2q6GAqACIRN2" ;.
+
+mod:Departure_ProcessCompositionBaggage_drop_off  rdf:type archi:Composition ;  rdfs:domain mod:Departure_Process ;  rdfs:range mod:Baggage_drop_off ;  rdfs:comment "Id-Va9A2q6GAqACIROV" ;.
+
+mod:Payment_verification_interfaceServingReservation_system  rdf:type archi:Serving ;  rdfs:domain mod:Payment_verification_interface ;  rdfs:range mod:Reservation_system ;  rdfs:comment "Id-9FBVwa6GAqACIQ5n" ;.
+
+mod:Online_check_inServingPassenger  rdf:type archi:Serving ;  rdfs:domain mod:Online_check_in ;  rdfs:range mod:Passenger ;  rdfs:comment "Id-_CCQ2q6GAqACIRRA" ;.
+
+mod:Seat_reservationServingCheck_in_process  rdf:type archi:Serving ;  rdfs:domain mod:Seat_reservation ;  rdfs:range mod:Check_in_process ;  rdfs:comment "Id-kuY7Wq6GAqACIRHd" ;.
+
+mod:Departure_ProcessCompositionBoarding  rdf:type archi:Composition ;  rdfs:domain mod:Departure_Process ;  rdfs:range mod:Boarding ;  rdfs:comment "Id-KIfA2q6GAqACIRO2" ;.
+
+mod:Phd_MDM  rdf:type archi:model ;  archi:hasModellingElement mod:Ticket_information ;  archi:hasModellingElement mod:Payment_verification_interface ;  archi:hasModellingElement mod:Seat_reservation ;  archi:hasModellingElement mod:Online_booking ;  archi:hasModellingElement mod:Boarding_pass ;  archi:hasModellingElement mod:Data_storage ;  archi:hasModellingElement mod:Kiosk_Terminal ;  archi:hasModellingElement mod:Boarding ;  archi:hasModellingElement mod:CRM_System ;  archi:hasModellingElement mod:Kiosk_system ;  archi:hasModellingElement mod:Check_in_process ;  archi:hasModellingElement mod:Payment_provider ;  archi:hasModellingElement mod:Flight_reservation ;  archi:hasModellingElement mod:KIosk_checkin ;  archi:hasModellingElement mod:e_Ticket ;  archi:hasModellingElement mod:Baggage_drop_off ;  archi:hasModellingElement mod:Online_check_in ;  archi:hasModellingElement mod:Reservation_system ;  archi:hasModellingElement mod:Departure_Process ;  archi:hasModellingElement mod:Ticket ;  archi:hasModellingElement mod:Get_reservation_data ;  archi:hasModellingElement mod:DBMS ;  archi:hasModellingElement mod:SMS ;  archi:hasModellingElement mod:Linux_Server ;  archi:hasModellingElement mod:Booking_process ;  archi:hasModellingElement mod:Access_customer_data ;  archi:hasModellingElement mod:PDF ;  archi:hasModellingElement mod:Payment_Verification_Service ;  archi:hasModellingElement mod:Cheapflight ;  archi:hasModellingElement mod:Customer_Agent ;  archi:hasModellingElement mod:Customer_data ;  archi:hasModellingElement mod:Self_check_in ;  archi:hasModellingElement mod:Passenger ;  archi:hasModellingElement mod:Check_in_processAccessBoarding_pass ;  archi:hasModellingElement mod:Reservation_systemRealizationFlight_reservation ;  archi:hasModellingElement mod:Check_in_processAccessTicket ;  archi:hasModellingElement mod:KIosk_checkinServingCheck_in_process ;  archi:hasModellingElement mod:Online_bookingServingPassenger ;  archi:hasModellingElement mod:Booking_processRealizationOnline_booking ;  archi:hasModellingElement mod:Booking_processAccessTicket ;  archi:hasModellingElement mod:PassengerAccessBoarding_pass ;  archi:hasModellingElement mod:Payment_Verification_ServiceServingFlight_reservation ;  archi:hasModellingElement mod:PassengerAccessTicket ;  archi:hasModellingElement mod:Kiosk_systemRealizationKIosk_checkin ;  archi:hasModellingElement mod:Ticket_informationRealizatione_Ticket ;  archi:hasModellingElement mod:DBMSRealizationData_storage ;  archi:hasModellingElement mod:Reservation_systemRealizationSeat_reservation ;  archi:hasModellingElement mod:DBMSAccessTicket_information ;  archi:hasModellingElement mod:SMSRealizationTicket ;  archi:hasModellingElement mod:Reservation_systemAssociationGet_reservation_data ;  archi:hasModellingElement mod:Get_reservation_dataServingKiosk_system ;  archi:hasModellingElement mod:CRM_SystemAssociationAccess_customer_data ;  archi:hasModellingElement mod:Data_storageServingReservation_system ;  archi:hasModellingElement mod:Check_in_processRealizationSelf_check_in ;  archi:hasModellingElement mod:Customer_AgentAssignmentBaggage_drop_off ;  archi:hasModellingElement mod:Access_customer_dataServingReservation_system ;  archi:hasModellingElement mod:e_TicketRealizationTicket ;  archi:hasModellingElement mod:Self_check_inServingPassenger ;  archi:hasModellingElement mod:Kiosk_TerminalRealizationKiosk_system ;  archi:hasModellingElement mod:CRM_SystemAccessCustomer_data ;  archi:hasModellingElement mod:Linux_ServerAssignmentDBMS ;  archi:hasModellingElement mod:Check_in_processRealizationOnline_check_in ;  archi:hasModellingElement mod:Reservation_systemAccesse_Ticket ;  archi:hasModellingElement mod:Flight_reservationServingBooking_process ;  archi:hasModellingElement mod:PDFRealizationTicket ;  archi:hasModellingElement mod:Departure_ProcessCompositionCheck_in_process ;  archi:hasModellingElement mod:Departure_ProcessCompositionBaggage_drop_off ;  archi:hasModellingElement mod:Payment_verification_interfaceServingReservation_system ;  archi:hasModellingElement mod:Online_check_inServingPassenger ;  archi:hasModellingElement mod:Seat_reservationServingCheck_in_process ;  archi:hasModellingElement mod:Departure_ProcessCompositionBoarding ;.

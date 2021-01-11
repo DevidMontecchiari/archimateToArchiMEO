@@ -12,6 +12,7 @@ public class Relationships {
 	String accessType="";
 	String modifier="";
 	String isDirected="";
+	String propertyRaw="";
 
 	public String getModifier() {
 		return modifier;
@@ -104,6 +105,15 @@ public class Relationships {
 			relNameRaw=(String) this.raw.subSequence(this.raw.indexOf(">"), this.raw.indexOf("</name>")+ ("</name>").length());
 			raw=raw.replace(relNameRaw," />");
 			raw=raw.replace("</relationship>"," ");
+		}
+		
+		if(raw.contains("<properties>")) {
+			this.name= (String) this.raw.subSequence(this.raw.indexOf("<properties>")+ ("<properties>").length(), this.raw.indexOf("</properties>"));
+			relNameRaw=(String) this.raw.subSequence(this.raw.indexOf(">"), this.raw.indexOf("</properties>")+ ("</properties>").length());
+
+			raw=raw.replace(relNameRaw," />");
+			raw=raw.replace("</relationship>"," ");
+			this.propertyRaw=(String) this.raw.subSequence(this.raw.indexOf("<properties>"), this.raw.indexOf("</properties>")+ ("</properties>").length());
 		}
 
 		String rawCleaned=raw.replace("</relationships>","").replace("/>","").replace("\"","").trim();
